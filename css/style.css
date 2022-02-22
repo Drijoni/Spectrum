@@ -44,7 +44,7 @@ body {
 
 
 .styledSection {
-    padding:80 50 100 50;
+    padding:10 50 40 50;
  
 }
 
@@ -58,6 +58,13 @@ body {
     align-items: center;
     
 }
+
+.sectionTitle {
+    font-size: 32px;
+    font-family:MainTitle;
+    padding:20 40;
+}
+
 
 .navbar ul {
     font-family: MenuShapiro;
@@ -247,7 +254,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
- 
+    align-items: flex-start; 
 }
 
 
@@ -261,14 +268,14 @@ body {
 }
 
 .gridFeatures div {
-    border:1px solid yellow;
+    background-color: rgb(54, 48, 78);
     padding:20 30;
     border-radius: 20px;
     font-family: Descriptions;
 }
 
 .gridFeatures div h1 {
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .gridFeatures div h2 {
@@ -276,30 +283,36 @@ body {
 }
 
 .gridFeatures div p {
-    font-size: 14px;
+    font-size: 16x;
     color: #e0e0e0b7;
 }
 
+.marketplaceDescription {
+    font-size: 20px;
+    font-weight: 300;
+}
 
 
 .marketplace {
     grid-area: 1 / 1 / 4 / 3;
    /* background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(10, 10, 10, 0.774)), url('../assets/images/spectrumPurple.png') no-repeat;
     */border: cover;
+    display: flex;
+    flex-direction: column;
+  
+    
  }
 
-.marketplaceBtn {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    height: 40%;
-}
 
-.marketplaceBtn button {
-    padding:10px;
+ .button {
+    margin-top: auto;
+    padding:10 10px;
     background-color: transparent;
     border:1px solid #4fbfa5;
     border-radius: 10px;
+    width: 40%;
+    font-size: 16px;
+    
 }
 
 .portfolio {
@@ -313,3 +326,35 @@ body {
 .deals {
     grid-area: 3 / 3 / 4 / 5;
 }
+
+
+/* Marketplace platform */
+
+
+.platform {
+    padding:10 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+.platformImage img {
+    width: 100%;
+}
+
+.platformContent { 
+    width:60%;
+    padding:10 30px;
+    display: flex;
+    font-family: Descriptions;
+}
+
+.platformContent p {
+    width: 80%;
+}
+
+
