@@ -357,4 +357,27 @@ body {
     width: 80%;
 }
 
+/* Creating and Selling Section*/
 
+.tokenomicsContainer {
+  
+    display: grid;
+    grid-template-columns: repeat(4,auto);
+
+}
+
+
+.tokenomics {
+    padding:30px;
+}
+
+.tokenomicsTitle h1 {
+    font-family: Descriptions;
+    font-size: 18px;
+}
+
+.tokenomicsDescription p {
+    font-family: Descriptions;
+    font-size: 14px;
+    color: #e0e0e0b7;
+}
