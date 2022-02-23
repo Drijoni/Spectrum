@@ -44,8 +44,14 @@ body {
 
 
 .styledSection {
-    padding:10 50 40 50;
- 
+    /*padding: 10 70 40 70;*/
+    padding: 20 130px;
+}
+
+
+.divider {
+    border:1px solid red;
+    height: 300px;;
 }
 
 
@@ -56,13 +62,23 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    
+
 }
+
+.sectionTitleContainer p {
+    padding: 10 40;
+}
+
+.sectionTitleContainer p {
+    font-family: Descriptions;
+    font-size: 16px;
+}
+
 
 .sectionTitle {
     font-size: 32px;
-    font-family:MainTitle;
-    padding:20 40;
+    font-family: MainTitle;
+    padding: 20 40;
 }
 
 
@@ -106,7 +122,7 @@ body {
 
 
 .contentContainer {
-    padding: 40 50;    
+    padding: 40 50;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -132,7 +148,7 @@ body {
 }
 
 .contentContainer>h3::after {
-    content:"-";
+    content: "-";
     color: red;
 
 }
@@ -162,10 +178,10 @@ body {
 }
 
 .galleryContainer {
-    padding:10px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
-    gap:20px;
+    gap: 20px;
 }
 
 
@@ -254,12 +270,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start; 
+    align-items: flex-start;
 }
 
 
 .gridFeatures {
-    padding:30px;
+    padding: 30px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -269,7 +285,7 @@ body {
 
 .gridFeatures div {
     background-color: rgb(54, 48, 78);
-    padding:20 30;
+    padding: 20 30;
     border-radius: 20px;
     font-family: Descriptions;
 }
@@ -295,24 +311,25 @@ body {
 
 .marketplace {
     grid-area: 1 / 1 / 4 / 3;
-   /* background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(10, 10, 10, 0.774)), url('../assets/images/spectrumPurple.png') no-repeat;
-    */border: cover;
+    /* background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(10, 10, 10, 0.774)), url('../assets/images/spectrumPurple.png') no-repeat;
+    */
+    border: cover;
     display: flex;
     flex-direction: column;
-  
-    
- }
 
 
- .button {
+}
+
+
+.button {
     margin-top: auto;
-    padding:10 10px;
+    padding: 10 10px;
     background-color: transparent;
-    border:1px solid #4fbfa5;
+    border: 1px solid #4fbfa5;
     border-radius: 10px;
     width: 40%;
     font-size: 16px;
-    
+
 }
 
 .portfolio {
@@ -332,7 +349,7 @@ body {
 
 
 .platform {
-    padding:10 30px;
+    padding: 10 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -340,44 +357,177 @@ body {
 
 }
 
-
-
 .platformImage img {
-    width: 100%;
+    width: 90%;
 }
 
-.platformContent { 
-    width:60%;
-    padding:10 30px;
+.platformContent {
+    width: 60%;
+    padding: 10 30px;
     display: flex;
     font-family: Descriptions;
 }
 
 .platformContent p {
-    width: 80%;
+    font-size: 18px;
+    width: 100%;
+    padding: 20px;
 }
 
 /* Creating and Selling Section*/
 
 .tokenomicsContainer {
-  
     display: grid;
-    grid-template-columns: repeat(4,auto);
+    grid-template-columns: repeat(4, minmax(200px, auto));
+    align-items: center;
+    padding: 10 40;
 
 }
-
 
 .tokenomics {
-    padding:30px;
-}
+    padding: 15 30px;
+    background-color: #18182b;
+    border-radius: 20px;
+    max-width: 300px;
 
-.tokenomicsTitle h1 {
-    font-family: Descriptions;
-    font-size: 18px;
 }
 
 .tokenomicsDescription p {
     font-family: Descriptions;
     font-size: 14px;
     color: #e0e0e0b7;
+    font-stretch: expanded;
 }
+
+.tokenPercentage p {
+    padding: 100px;
+    font-size: 22px;
+    font-family: MainTitle;
+    padding: 0;
+    margin: 0;
+
+}
+
+.tokenPercentage>p::before {
+    content: "";
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 8px;
+    border-radius: 20px;
+    margin: 15 0;
+
+}
+
+
+.percentageDef::before {
+    background-color: #A52286;
+}
+
+.percentageLightRed::before {
+    background-color: #C22A5A;
+}
+
+.percentageOrange::before {
+    background-color: #3202C3;
+}
+
+.percentageBlue::before {
+    background-color: #E9625F;
+}
+
+/* RoadMap */
+
+.roadMapContainer {
+    display: grid;
+    grid-template-rows: repeat(2,auto);
+}
+
+.firstRoadmap {
+    padding: 10 40;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+
+}
+
+.firstRoadmap p {
+    width: 50%;
+    font-size: 18px;
+    font-family: Descriptions;
+    color: #e0e0e0b7;
+    
+    
+}
+
+.firstRoadmap h2 {
+    background: linear-gradient(90deg, rgba(254,94,0,1), rgba(246,69,98,1), rgba(194,45,225,1), rgba(246,69,98,1), rgba(254,94,0,1));
+    color: transparent;
+    -webkit-background-clip: text;
+    font-size: 206px;
+    font-family: MainTitle;
+    text-align: left;
+    padding:5%;
+}
+
+#roadMapBlue h2 {
+    padding:0;
+    -webkit-background-clip: text !important;
+    background: linear-gradient(90deg, #3D6DFC, #42F5E1, #3D6DFC);
+}
+
+#roadMapBluePhase>ul>li::before {
+    background: linear-gradient(90deg, #3D6DFC, #42F5E1, #3D6DFC) !important;
+}
+
+
+.Phase {
+    width: 35%;
+    padding: 10px 40;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #33334B;
+    border-radius: 20px;
+    box-shadow: 5px 10px 20px rgba(241, 236, 236, 0.068);
+
+
+}
+
+.Phase h1 {
+    font-size: 30px;
+    font-family: MainTitle;
+    font-weight: 900;
+}
+
+
+.Phase ul {
+    list-style: none;
+    font-family: Descriptions;
+    text-align: left;
+    padding:0;
+    width: 100%;
+}
+
+.Phase ul li {
+    margin: 10 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+    color: #C3C3E1;
+}
+
+
+.Phase>ul>li::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #F64562, #FE5E00 100%);
+    display: block;
+    margin:0 10;
+}
+
