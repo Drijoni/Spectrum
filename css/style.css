@@ -37,7 +37,7 @@ body {
 /* Sections and titles with descriptions */
 .styledSection {
     /*padding: 10 70 40 70;*/
-    padding: 80 140px;
+    padding: 40 140px;
 }
 
 
@@ -58,12 +58,30 @@ body {
 
 /* Header */
 .header {
-    padding: 40 160;
+    margin:30 0;
+    padding: 0 160;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar button {
+    padding:15 40px;
+    background: linear-gradient(90deg, rgba(98,248,187,1) 31%, rgba(105,251,233,1) 79%);
+    font-weight: bold;
+    font-family: MenuShapiro;
+    font-size: 16px;
+    color: black;
+    border:none;
+    outline: none;
+    border-radius: 20px;
 }
 
 .navbar ul {
@@ -91,14 +109,15 @@ body {
 
 /* First Section */
 
+#Home {
+    padding:40 140;
+}
 
 .allContent {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    width: 100%;
-
 }
 
 
@@ -108,6 +127,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     text-align: left;
+    
 }
 
 .contentContainer * {
@@ -127,42 +147,51 @@ body {
 
 
 .contentContainer h3 {
-    font-family: 'Space Mono', monospace;
-    font-weight: bold;
-    align-items: center;
+    color: transparent;
+    font-family: MenuShapiro;
+    align-items: center; 
+    background: linear-gradient(90deg, rgba(100,200,224,1) 5%, rgba(137,100,215,1) 8%, rgba(70,25,162,1) 46%);
+    -webkit-background-clip: text;
+    display: flex;
+
 }
 
 .contentContainer>h3::after {
-    content: "-";
-    color: red;
+    content: "";
+    background: linear-gradient(90deg, rgba(70,25,162,1) 27%, rgba(137,100,215,1) 58%);
+    width: 100px;
+    height: 5px;
+    margin: 0 20;
+    border-radius: 10px;
 
 }
 
 .homeButtons {
     display: flex;
+    flex-direction: row;
+
 }
 
-.btnContainer {
-    padding: 20 20;
-    display: flex;
-    justify-content: flex-start;
-}
 
-.btnContainer button {
+.homeButtons button {
+    border:none;
     padding: 20 40;
-    border: 1px solid #50bea5;
-    border-radius: 40px;
-    font-family: Button;
+    background: linear-gradient(90deg, rgba(98,248,187,1) 31%, rgba(105,251,233,1) 79%);
+    font-weight: bold;
+    font-family: MenuShapiro;
     font-size: 16px;
-    background-color: transparent;
-
+    color: black;
+    outline: none;
+    border-radius: 20px;
+    margin:10;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px 0px;
 }
 
 .heroImage {
-    width: 40%;    
-
-
+    width: 40%;  
+    padding:0 0 100 0;
 }
+
 
 
 /* Features Section */
@@ -172,20 +201,21 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    padding:0 0 140 0;
 }
 
 
 .gridFeatures {
     padding: 30px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(5, 1fr);
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
     grid-column-gap: 30px;
     grid-row-gap: 20px;
 }
 
 .gridFeatures div {
-    background-color: rgb(54, 48, 78);
+    background-color:#1B1C1E;
     padding: 20 30;
     border-radius: 20px;
     font-family: Descriptions;
@@ -220,17 +250,21 @@ body {
     display: flex;
     flex-direction: column;
 
+
 }
 
-.button {
+.marketplaceButton{
     margin-top: auto;
-    padding: 10 10px;
-    background-color: transparent;
-    border: 1px solid #4fbfa5;
-    border-radius: 10px;
-    width: 40%;
+    padding:15 40px;
+    background: linear-gradient(90deg, rgba(98,248,187,1) 31%, rgba(105,251,233,1) 79%);
+    font-weight: bold;
+    font-family: MenuShapiro;
     font-size: 16px;
-
+    color: black;
+    border:none;
+    outline: none;
+    border-radius: 20px;
+    width: 30%;
 }
 
 .portfolio {
@@ -280,14 +314,15 @@ body {
 
 .tokenomicsContainer {
     display: grid;
-    grid-template-columns: repeat(4, minmax(200px, auto));
+    grid-template-columns: repeat(4, 1fr);
     align-items: center;
+    gap:20px;
     padding: 10 40;
 }
 
 .tokenomics {
     padding: 15 30px;
-    background-color: #18182b;
+    background-color:#1B1C1E;
     border-radius: 20px;
     max-width: 300px;
     box-shadow: 5px 10px 25px rgba(155, 4, 224, 0.144);
@@ -392,7 +427,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    background-color: #33334B;
+    background-color:#1B1C1E;
     border-radius: 20px;
     box-shadow: 5px 10px 20px rgba(241, 236, 236, 0.068);
 
@@ -460,3 +495,11 @@ footer {
 
 
 
+/* Some Cool Balls and Lines */
+
+.coolBall {
+    position: absolute;
+    width: 300px;
+    margin:200 0;
+    z-index: -9;   
+}
