@@ -1,14 +1,4 @@
-/* Root */
-:root {
-    --fontSizeTitle: 46;
-    --fontSizeDescription: 18;
-    --fontSizeMenu: 16;
-}
-
-
-
 /*FONTS*/
-
 
 @font-face {
     font-family: MenuShapiro;
@@ -36,28 +26,39 @@
 * {
     color: white;
     box-sizing: border-box;
+    padding:0;
+    margin:0;
 }
 
 body {
     background-color: #0a0214;
 }
 
-
+/* Sections and titles with descriptions */
 .styledSection {
     /*padding: 10 70 40 70;*/
-    padding: 20 130px;
+    padding: 80 140px;
 }
 
 
-.divider {
-    border:1px solid red;
-    height: 300px;;
+.sectionTitleContainer p {
+    font-family: Descriptions;
+    font-size: 16px;
+    padding: 20 40;
 }
+
+
+.sectionTitle {
+    font-size: 32px;
+    font-family: MainTitle;
+    padding: 20 40 40 40;
+}
+
 
 
 /* Header */
 .header {
-    padding: 40 100;
+    padding: 40 160;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -65,26 +66,9 @@ body {
 
 }
 
-.sectionTitleContainer p {
-    padding: 10 40;
-}
-
-.sectionTitleContainer p {
-    font-family: Descriptions;
-    font-size: 16px;
-}
-
-
-.sectionTitle {
-    font-size: 32px;
-    font-family: MainTitle;
-    padding: 20 40;
-}
-
-
 .navbar ul {
     font-family: MenuShapiro;
-    font-size: var(--fontSizeMenu);
+    font-size: 16px;
     text-transform: uppercase;
     font-weight: 300;
     display: flex;
@@ -109,19 +93,16 @@ body {
 
 
 .allContent {
-
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    overflow: hidden;
     width: 100%;
-    height: auto;
 
 }
 
 
-.contentContainer {
+.contentContainer { 
     padding: 40 50;
     display: flex;
     flex-direction: column;
@@ -129,15 +110,19 @@ body {
     text-align: left;
 }
 
+.contentContainer * {
+    padding:20 0;
+}
+
 
 .contentContainer h1 {
     font-family: MainTitle;
-    font-size: var(--fontSizeTitle);
+    font-size: 46px;
 }
 
 .contentContainer p {
     font-family: Descriptions;
-    font-size: var(--fontSizeDescription);
+    font-size:18px;
 }
 
 
@@ -173,94 +158,10 @@ body {
 
 }
 
-.allGalleries {
-    display: flex;
-}
-
-.galleryContainer {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
+.heroImage {
+    width: 40%;    
 
 
-#galleryContainer2 {
-    margin-top: 100px;
-}
-
-.nftImages {
-    width: 200px;
-    border-radius: 10px;
-}
-
-/* Info box */
-
-.infoBoxes {
-    display: grid;
-    justify-content: space-around;
-    grid-template-columns: repeat(4, auto);
-    height: 50%;
-}
-
-.box {
-    background-image: url('../assets/images/image.png');
-    background-size: cover;
-    width: 100%;
-    height: 80%;
-    margin: 10px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: center;
-    border-radius: 20px;
-    border: 10px solid #39589f;
-
-}
-
-.bidContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: center;
-    background-color: #1f1d2a;
-    border-radius: 10px;
-    text-align: center;
-    width: 100%;
-}
-
-.bid {
-    margin: 5 20;
-    padding: 0 5;
-}
-
-.bid p {
-    font-size: 12px;
-    font-family: 'Poppins', sans-serif;
-    color: "red";
-}
-
-.bid h2 {
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-}
-
-.placeBidBtn {
-    display: flex;
-    justify-content: center;
-    margin: 10;
-}
-
-.placeBidBtn button {
-    padding: 12 30;
-    font-weight: bold;
-    font-family: Button;
-    background-color: #4fbfa5;
-    outline: none;
-    border: none;
-    border-radius: 10px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
 
@@ -291,7 +192,7 @@ body {
 }
 
 .gridFeatures div h1 {
-    font-size: 40px;
+    font-size: 38px;
 }
 
 .gridFeatures div h2 {
@@ -304,8 +205,10 @@ body {
 }
 
 .marketplaceDescription {
-    font-size: 20px;
+    margin-top:20px;
+    font-size: 18px;
     font-weight: 300;
+    color: #e0e0e0b7;   
 }
 
 
@@ -317,9 +220,7 @@ body {
     display: flex;
     flex-direction: column;
 
-
 }
-
 
 .button {
     margin-top: auto;
@@ -359,10 +260,11 @@ body {
 
 .platformImage img {
     width: 90%;
+    box-shadow: 5px 10px 25px rgba(74, 9, 104, 0.575);
 }
 
 .platformContent {
-    width: 60%;
+    width: 80%;
     padding: 10 30px;
     display: flex;
     font-family: Descriptions;
@@ -374,14 +276,13 @@ body {
     padding: 20px;
 }
 
-/* Creating and Selling Section*/
+/* Tax Distribution*/
 
 .tokenomicsContainer {
     display: grid;
     grid-template-columns: repeat(4, minmax(200px, auto));
     align-items: center;
     padding: 10 40;
-
 }
 
 .tokenomics {
@@ -389,10 +290,11 @@ body {
     background-color: #18182b;
     border-radius: 20px;
     max-width: 300px;
-
+    box-shadow: 5px 10px 25px rgba(155, 4, 224, 0.144);
 }
 
 .tokenomicsDescription p {
+    padding:10 0;
     font-family: Descriptions;
     font-size: 14px;
     color: #e0e0e0b7;
@@ -445,9 +347,10 @@ body {
 
 .firstRoadmap {
     padding: 10 40;
+    margin:40 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
    
 
 }
@@ -484,7 +387,7 @@ body {
 
 .Phase {
     width: 35%;
-    padding: 10px 40;
+    padding: 40px 40;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -500,6 +403,7 @@ body {
     font-size: 30px;
     font-family: MainTitle;
     font-weight: 900;
+    margin:10 0;
 }
 
 
@@ -530,4 +434,29 @@ body {
     display: block;
     margin:0 10;
 }
+
+
+/* Footer */
+footer {
+    padding-top: 100px;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding:10 30;
+}
+
+.footerContainer img {
+    width: 5%;
+}
+
+.footerContainer p { 
+    font-family: 14px;
+    font-family: Descriptions;
+}
+
+
 
