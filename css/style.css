@@ -26,8 +26,8 @@
 * {
     color: white;
     box-sizing: border-box;
-    padding:0;
-    margin:0;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -38,7 +38,8 @@ body {
 .styledSection {
 
     /*padding: 10 70 40 70;*/
-    padding: 40 100px;
+    padding: 40 140px;
+
 }
 
 
@@ -59,12 +60,13 @@ body {
 
 /* Header */
 .header {
-    margin:30 0;
+    margin: 30 0 0 0;
     padding: 0 160;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+
 
 }
 
@@ -74,13 +76,13 @@ body {
 }
 
 .navbar button {
-    padding:15 40px;
-    background: linear-gradient(90deg, rgba(98,248,187,1) 31%, rgba(105,251,233,1) 79%);
+    padding: 10 40px;
+    background: linear-gradient(90deg, rgba(98, 248, 187, 1) 31%, rgba(105, 251, 233, 1) 79%);
     font-weight: bold;
     font-family: MenuShapiro;
     font-size: 16px;
     color: black;
-    border:none;
+    border: none;
     outline: none;
     border-radius: 20px;
 }
@@ -111,28 +113,29 @@ body {
 /* First Section */
 
 #Home {
-    padding:40 140;
+    padding: 200 140;
+
 }
 
 .allContent {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
+
+    padding:0 40;
 }
 
 
-.contentContainer { 
-    padding: 40 50;
+
+.contentContainer {
+    width: 55%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
     text-align: left;
-    
+
 }
 
 .contentContainer * {
-    padding:20 0;
+    padding: 20 0;
+
 }
 
 
@@ -143,15 +146,15 @@ body {
 
 .contentContainer p {
     font-family: Descriptions;
-    font-size:18px;
+    font-size: 18px;
 }
 
 
 .contentContainer h3 {
     color: transparent;
     font-family: MenuShapiro;
-    align-items: center; 
-    background: linear-gradient(90deg, rgba(100,200,224,1) 5%, rgba(137,100,215,1) 8%, rgba(70,25,162,1) 46%);
+    align-items: center;
+    background: linear-gradient(90deg, rgba(100, 200, 224, 1) 5%, rgba(137, 100, 215, 1) 8%, rgba(70, 25, 162, 1) 46%);
     -webkit-background-clip: text;
     display: flex;
 
@@ -159,7 +162,7 @@ body {
 
 .contentContainer>h3::after {
     content: "";
-    background: linear-gradient(90deg, rgba(70,25,162,1) 27%, rgba(137,100,215,1) 58%);
+    background: linear-gradient(90deg, rgba(70, 25, 162, 1) 27%, rgba(137, 100, 215, 1) 58%);
     width: 100px;
     height: 5px;
     margin: 0 20;
@@ -175,22 +178,26 @@ body {
 
 
 .homeButtons button {
-    border:none;
-    padding: 20 40;
-    background: linear-gradient(90deg, rgba(98,248,187,1) 31%, rgba(105,251,233,1) 79%);
+    border: none;
+    padding: 15 40;
+    background: linear-gradient(90deg, rgba(98, 248, 187, 1) 31%, rgba(105, 251, 233, 1) 79%);
     font-weight: bold;
     font-family: MenuShapiro;
     font-size: 16px;
     color: black;
     outline: none;
     border-radius: 20px;
-    margin:10;
+    margin: 10;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px 0px;
 }
 
+
 .heroImage {
-    width: 40%;  
-    padding:0 0 100 0;
+    position: absolute;
+    width: 45%;
+    margin:-180 680;
+    display: flex;
+    border-radius: 30px;
 }
 
 
@@ -202,7 +209,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding:0 0 140 0;
+    padding: 0 0 140 0;
 }
 
 
@@ -216,7 +223,7 @@ body {
 }
 
 .gridFeatures div {
-    background-color:#1B1C1E;
+    background-color: #1B1C1E;
     padding: 20 30;
     border-radius: 20px;
     font-family: Descriptions;
@@ -236,10 +243,10 @@ body {
 }
 
 .marketplaceDescription {
-    margin-top:20px;
+    margin-top: 20px;
     font-size: 18px;
     font-weight: 300;
-    color: #e0e0e0b7;   
+    color: #e0e0e0b7;
 }
 
 
@@ -254,15 +261,15 @@ body {
 
 }
 
-.marketplaceButton{
+.marketplaceButton {
     margin-top: auto;
-    padding:15 40px;
-    background: linear-gradient(90deg, rgba(98,248,187,1) 31%, rgba(105,251,233,1) 79%);
+    padding: 10 0;
+    background: linear-gradient(90deg, rgba(98, 248, 187, 1) 31%, rgba(105, 251, 233, 1) 79%);
     font-weight: bold;
     font-family: MenuShapiro;
     font-size: 16px;
     color: black;
-    border:none;
+    border: none;
     outline: none;
     border-radius: 20px;
     width: 30%;
@@ -296,6 +303,7 @@ body {
 .platformImage img {
     width: 90%;
     box-shadow: 5px 10px 25px rgba(74, 9, 104, 0.575);
+    border-radius: 20px;
 }
 
 .platformContent {
@@ -313,31 +321,31 @@ body {
 
 /* Tax Distribution*/
 
-.tokenomicsContainer {
+.taxContainer {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     align-items: center;
-    gap:20px;
+    gap: 20px;
     padding: 10 40;
 }
 
-.tokenomics {
+.tax {
     padding: 15 30px;
-    background-color:#1B1C1E;
+    background-color: #1B1C1E;
     border-radius: 20px;
     max-width: 300px;
     box-shadow: 5px 10px 25px rgba(155, 4, 224, 0.144);
 }
 
-.tokenomicsDescription p {
-    padding:10 0;
+.taxDescription p {
+    padding: 10 0;
     font-family: Descriptions;
     font-size: 14px;
     color: #e0e0e0b7;
     font-stretch: expanded;
 }
 
-.tokenPercentage p {
+.taxPercentage p {
     padding: 100px;
     font-size: 22px;
     font-family: MainTitle;
@@ -346,7 +354,7 @@ body {
 
 }
 
-.tokenPercentage>p::before {
+.taxPercentage>p::before {
     content: "";
     display: flex;
     flex-direction: column;
@@ -378,16 +386,16 @@ body {
 
 .roadMapContainer {
     display: grid;
-    grid-template-rows: repeat(2,auto);
+    grid-template-rows: repeat(2, auto);
 }
 
 .firstRoadmap {
     padding: 10 40;
-    margin:40 0;
+    margin: 40 0;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-   
+
 
 }
 
@@ -396,22 +404,22 @@ body {
     font-size: 18px;
     font-family: Descriptions;
     color: #e0e0e0b7;
-    
-    
+
+
 }
 
 .firstRoadmap h2 {
-    background: linear-gradient(90deg, rgba(254,94,0,1), rgba(246,69,98,1), rgba(194,45,225,1), rgba(246,69,98,1), rgba(254,94,0,1));
+    background: linear-gradient(90deg, rgba(254, 94, 0, 1), rgba(246, 69, 98, 1), rgba(194, 45, 225, 1), rgba(246, 69, 98, 1), rgba(254, 94, 0, 1));
     color: transparent;
     -webkit-background-clip: text;
     font-size: 206px;
     font-family: MainTitle;
     text-align: left;
-    padding:5%;
+    padding: 5%;
 }
 
 #roadMapBlue h2 {
-    padding:0;
+    padding: 0;
     -webkit-background-clip: text !important;
     background: linear-gradient(90deg, #3D6DFC, #42F5E1, #3D6DFC);
 }
@@ -428,7 +436,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    background-color:#1B1C1E;
+    background-color: #1B1C1E;
     border-radius: 20px;
     box-shadow: 5px 10px 20px rgba(241, 236, 236, 0.068);
 
@@ -439,7 +447,7 @@ body {
     font-size: 30px;
     font-family: MainTitle;
     font-weight: 900;
-    margin:10 0;
+    margin: 10 0;
 }
 
 
@@ -447,7 +455,7 @@ body {
     list-style: none;
     font-family: Descriptions;
     text-align: left;
-    padding:0;
+    padding: 0;
     width: 100%;
 }
 
@@ -468,7 +476,7 @@ body {
     border-radius: 50%;
     background: linear-gradient(90deg, #F64562, #FE5E00 100%);
     display: block;
-    margin:0 10;
+    margin: 0 10;
 }
 
 
@@ -482,25 +490,76 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding:10 30;
+    padding: 10 30;
 }
 
 .footerContainer img {
     width: 5%;
 }
 
-.footerContainer p { 
+.footerContainer p {
     font-family: 14px;
     font-family: Descriptions;
 }
 
+/*Tokenomics*/
 
 
-/* Some Cool Balls and Lines */
-
-.coolBall {
-    position: absolute;
-    width: 300px;
-    margin:200 0;
-    z-index: -9;   
+.tokenomicsContainer {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding:20px;
 }
+
+.tokenStats {
+    padding:0 20;
+    border-radius: 10px;
+    background-color: #1B1C1E;
+}
+
+.tokenNumber {
+    font-size: 38px;
+    font-family: MainTitle;
+    margin:10 0;
+}
+
+.tokenNumber::before { 
+    content: "";
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 8px;
+    border-radius: 20px;
+    margin: 15 0;
+    background: linear-gradient(90deg, #a56872, #fe5d008f 100%);
+
+}
+
+.tokenTitle {
+    font-family: Descriptions; 
+    color: #e0e0e0b7;
+    font-size: 20px;
+}
+
+#chart {
+    padding:10 100;
+    width: 100%;
+    height: auto;
+}
+
+
+
+#monthsContainer { grid-area: 1 / 1 / 2 / 3; }
+#artistFund { grid-area: 1 / 3 / 2 / 4; }
+#earlyBackers { grid-area: 1 / 4 / 2 / 5; }
+#treasury { grid-area: 1 / 5 / 2 / 6; }
+#chart { grid-area: 2 / 1 / 4 / 3;}
+#advisors { grid-area: 2 / 3 / 3 / 4; }
+#rewards { grid-area: 2 / 4 / 3 / 5; }
+#balancerLBP { grid-area: 2 / 5 / 3 / 6; }
+#initialLiquidity { grid-area: 3 / 3 / 4 / 4; }
+#team { grid-area: 3 / 4 / 4 / 5; }
+#airdrop { grid-area: 3 / 5 / 4 / 6; }
