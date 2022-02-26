@@ -14,8 +14,8 @@
     <!--Chart.js-->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-    <!--Jquery-->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.js"></script>
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Spectrum</title>
 </head>
@@ -24,6 +24,7 @@
 
 
     <header class="header">
+        <div class="logoAndNav">
         <div class="logoContainer">
             <a href="#">
                 <img src="assets/images/spectrum.png" alt="">
@@ -35,9 +36,25 @@
                 <li>Tokenomics</li>
                 <li>Roadmap</li>
             </ul>
-            <button>Get in</button>
+         
         </nav>
+
+    </div>
+
+    <div class="socialLinkAndButton">
+        <div class="socialLinks">
+            <ul>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-telegram"></i></a> </li>
+                <li><a href=""><i class="fa-brands fa-medium"></i></a> </li>
+                <li><a href=""><i class="fa-brands fa-discord"></i></a></li>
+            </ul>
+        </div>
+        <button>Get in</button>
+    </div>
     </header>
+
+
     <div class="mainContainer">
 
         <!--Home-->
@@ -64,51 +81,6 @@
 
 
         </section>
-
-        <!--Features-->
-        <section class="styledSection">
-
-            <div class="featuresContainer">
-                <h1 class="sectionTitle">Features</h1>
-                <div class="gridFeatures">
-                    <div class="marketplace">
-                        <h1>Spectrum marketplace
-                        </h1>
-                        <h3 class="marketplaceDescription">Spectrum’s Portal is the epicenter of the Spectrum ecosystem.
-                            Users will be able to
-                            perform multiple functions through it. Spectrum marketplace will give you the
-                            opportunity to create, buy, swap, sell your art and share it with the community. We are
-                            making NFTs more approachable and accessible. You will find the newest and hottest
-                            NFT trends in our marketplace. NFTs from famous high-profile trendsetters all in one
-                            place.
-                        </h3>
-
-                        <button class="marketplaceButton">Read More</button>
-
-                    </div>
-                    <div class="portfolio">
-                        <h2>Spectrum NFT Portfolio</h2>
-                        <p>By holding the token you own a % of our NFT portfolio. Profits will be redistributed amongst
-                            holders proportionally.</p>
-                    </div>
-                    <div class="giveaways">
-                        <h2>NFT Launchpad</h2>
-                        <p>NFT projects incubator allowing projects to raise capital. We'll offer fair and accessible
-                            fundraising for NFT artists.</p>
-                    </div>
-                    <div class="deals">
-                        <h2>Staking
-                        </h2>
-
-                        <P>You can stake your tokens to vote for your favorite artworks. By voting and staking users get
-                            rewards.</P>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
-
 
         <!--“Platform”-->
         <section class="styledSection">
@@ -145,7 +117,7 @@
 
 
             <div class="platformContainer">
-                <h1 class="sectionTitle">Weekly contests
+                <h1 class="sectionTitle">Artist's Fund
                 </h1>
 
 
@@ -174,7 +146,7 @@
 
 
             <div class="platformContainer">
-                <h1 class="sectionTitle">Join the artists’ pool”
+                <h1 class="sectionTitle">Join the artists’ pool
                 </h1>
 
 
@@ -201,7 +173,7 @@
         <section class="styledSection" id="taxDistribution">
             <div class="sectionTitleContainer">
                 <h1 class="sectionTitle">Tax distribution</h1>
-                <p>There is a 10% tax on every transaction
+                <p>There is a 10% tax on every transaction:
                 </p>
             </div>
             <div class="taxContainer">
@@ -251,7 +223,7 @@
                     </div>
                     <div class="taxDescription">
                         <p>
-                            of each transaction would be added to Marketing and Development. It is key and
+                            of each transaction goes to Marketing and Development. It is key and
                             being able to have growing marketing funds would help us in the long run.
 
                         </p>
@@ -278,7 +250,7 @@
                     </p>
 
                     <div class="Phase">
-                        <h1>First Launch</h1>
+                        <h1>Phase 1</h1>
                         <ul>
                             <li> Conceptualization of the project
                             </li>
@@ -306,7 +278,7 @@
 
                 </div>
 
-                <div class="firstRoadmap">
+                <div class="firstRoadmap" id="roadMapRed">
 
                     <div class="Phase">
                         <h1>Phase 2</h1>

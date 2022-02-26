@@ -26,6 +26,11 @@
     src: url('../assets/fonts/Shapiro/Shapiro\ 55\ Middle\ Extd.otf');
 }
 
+@font-face {
+    font-family: MiddleWide;
+    src: url('../assets/fonts/Shapiro/Shapiro\ 55\ Middle\ Wide.otf');
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
@@ -48,7 +53,7 @@ body {
 }
 
 .sectionTitleContainer p {
-    font-family: Descriptions;
+    font-family: MiddleWide;
     font-size: 16px;
     padding: 20 40;
 }
@@ -61,25 +66,64 @@ body {
 }
 
 
-
 /* Header */
 .header {
-    margin: 30 0 0 0;
+    margin: 10 0 0 0;
     padding: 0 160;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-
 
 }
 
-.navbar {
+.logoAndNav, .socialLinkAndButton{
     display: flex;
+    flex-direction: row;
     align-items: center;
+
 }
 
-.navbar button {
+
+
+.navbar ul {
+    display: flex;
+    font-family: MenuShapiro;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 300;
+    list-style: none;
+}
+
+.navbar ul li {
+    padding: 10 20;
+}
+
+
+.logoContainer a img {
+    width: 80px;
+}
+
+.socialLinks ul {
+    list-style: none;
+    display: flex;   
+}
+
+.socialLinks ul li {
+    font-size: 28px;
+    padding:0 10px;
+}
+
+.socialLinks ul li a i {
+   /*
+    -webkit-background-clip: text !important;
+    color: transparent;
+    background: linear-gradient(90deg, rgba(100, 200, 224, 1) 15%, rgba(137, 100, 215, 1) 41%, rgba(70, 25, 162, 1) 86%);
+   */
+   color: white;
+
+}
+
+.socialLinkAndButton button {
     padding: 10 40px;
     background: linear-gradient(90deg, rgba(98, 248, 187, 1) 31%, rgba(105, 251, 233, 1) 79%);
     font-weight: bold;
@@ -89,29 +133,6 @@ body {
     border: none;
     outline: none;
     border-radius: 20px;
-}
-
-.navbar ul {
-    font-family: MenuShapiro;
-    font-size: 16px;
-    text-transform: uppercase;
-    font-weight: 300;
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-}
-
-.navbar ul li {
-    padding: 10 20;
-}
-
-.logoContainer {
-    display: flex;
-    align-items: center;
-}
-
-.logoContainer a img {
-    width: 80px;
 }
 
 /* First Section */
@@ -158,6 +179,7 @@ body {
     background: linear-gradient(90deg, rgba(100, 200, 224, 1) 5%, rgba(137, 100, 215, 1) 8%, rgba(70, 25, 162, 1) 46%);
     -webkit-background-clip: text;
     display: flex;
+    text-transform: uppercase;
 
 }
 
@@ -225,7 +247,8 @@ body {
     background-color: #1B1C1E;
     padding: 20 30;
     border-radius: 20px;
-    font-family: Descriptions;
+    font-family:MiddleWide;
+    line-height: 1.2;
     box-shadow: rgba(25, 25, 26, 0.836) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 
 }
@@ -316,7 +339,8 @@ body {
     width: 80%;
     padding: 10 30px;
     display: flex;
-    font-family: Descriptions;
+    font-family: MiddleWide;
+    line-height: 1.5;
 }
 
 .platformContent p {
@@ -336,19 +360,20 @@ body {
 }
 
 .tax {
-    padding: 10 10 20 10;
-    height: 210px;
+    padding: 10 20 20 20;
+    height: 190px;
     background-color: #1B1C1E;
     border-radius: 20px;
     max-width: 300px;
-    box-shadow: 5px 10px 25px rgba(155, 4, 224, 0.144);
+    box-shadow: 15px 10px 20px rgba(95, 91, 91, 0.144);
 }
 
 .taxDescription p {
     padding: 10 0;
-    font-family: Descriptions;
+    font-family: MiddleWide;
+    line-height: 1.2;
     font-size: 14px;
-    color: #e0e0e0b7;
+    color: rgb(202, 200, 200);
     font-stretch: expanded;
 }
 
@@ -394,14 +419,14 @@ body {
 .roadMapContainer {
     display: grid;
     grid-template-rows: repeat(2, auto);
-    
 }
 
 .firstRoadmap {
-    margin: 40 0;
+    padding:0 40;
+    margin:20 0;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+
 
 
 }
@@ -409,24 +434,48 @@ body {
 .firstRoadmap p {
     width: 50%;
     font-size: 18px;
-    font-family: Descriptions;
+    font-family: MiddleWide;
     color: #e0e0e0b7;
+    font-weight: 400 !important;
+    line-height: 1.5;
+
+}
+
+#roadMapBlue {
+    display: flex;
+    align-items: center;
+
+}
+
+
+.firstRoadmap h2 {
+    -webkit-background-clip: text !important;
+    color: transparent;
+    font-size: 206px;
+    font-family: MainTitle;
+    padding:20 0 0 0;
+    margin:0 40 0 0;
 
 
 }
 
-.firstRoadmap h2 {
+#roadMapRed  {
+    align-items: center;
+
+}
+
+#roadMapRed h2 {
     background: linear-gradient(90deg, rgba(254, 94, 0, 1), rgba(246, 69, 98, 1), rgba(194, 45, 225, 1), rgba(246, 69, 98, 1), rgba(254, 94, 0, 1));
-    color: transparent;
-    -webkit-background-clip: text;
-    font-size: 206px;
-    font-family: MainTitle;
-    text-align: left;
-    padding: 5%;
+
+
+}
+
+#roadMapBlue {
+    padding: 40 40;
 }
 
 #roadMapBlue h2 {
-    padding: 0;
+
     -webkit-background-clip: text !important;
     background: linear-gradient(90deg, #3D6DFC, #42F5E1, #3D6DFC);
 }
@@ -438,15 +487,15 @@ body {
 
 .Phase {
     width: 35%;
-    padding: 40px 40;
+    padding: 20px 20;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     background-color: #1B1C1E;
     border-radius: 20px;
     box-shadow: 5px 10px 20px rgba(241, 236, 236, 0.068);
-
+    
 
 }
 
