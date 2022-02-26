@@ -398,7 +398,6 @@ body {
 }
 
 .firstRoadmap {
-    border:1px red solid;
     margin: 40 0;
     display: flex;
     justify-content: space-around;
