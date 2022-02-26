@@ -21,7 +21,13 @@
     src: url("../assets/fonts/Shapiro/Shapiro\ 25\ Super\ Fly\ Text.otf") format("opentype");
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Space+Mono&display=swap');
+@font-face {
+    font-family: ShapiroT;
+    src: url('../assets/fonts/Shapiro/Shapiro\ 55\ Middle\ Extd.otf');
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
     color: white;
@@ -37,11 +43,9 @@ body {
 /* Sections and titles with descriptions */
 .styledSection {
 
-    /*padding: 10 70 40 70;*/
     padding: 40 140px;
 
 }
-
 
 .sectionTitleContainer p {
     font-family: Descriptions;
@@ -113,29 +117,26 @@ body {
 /* First Section */
 
 #Home {
-    padding: 200 140;
+    padding: 0 0 0 140;
 
 }
 
 .allContent {
     display: flex;
+    flex-direction: row;
+    align-items: center;
 
-    padding:0 40;
 }
 
 
 
 .contentContainer {
-    width: 55%;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-
+    width: 50%;
+    padding:0 0 0 20px;
 }
 
 .contentContainer * {
     padding: 20 0;
-
 }
 
 
@@ -193,9 +194,7 @@ body {
 
 
 .heroImage {
-    position: absolute;
-    width: 45%;
-    margin:-180 680;
+    width: 50%;
     display: flex;
     border-radius: 30px;
 }
@@ -227,26 +226,33 @@ body {
     padding: 20 30;
     border-radius: 20px;
     font-family: Descriptions;
+    box-shadow: rgba(25, 25, 26, 0.836) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
 }
 
 .gridFeatures div h1 {
+    margin: 20 0;
     font-size: 38px;
+    font-family: ShapiroT;
 }
 
 .gridFeatures div h2 {
+    margin: 0 0 10 0;
     font-size: 18px;
 }
 
 .gridFeatures div p {
-    font-size: 16x;
+    font-size: 16px;
     color: #e0e0e0b7;
+    font-family: Descriptions;
 }
 
 .marketplaceDescription {
-    margin-top: 20px;
+
     font-size: 18px;
-    font-weight: 300;
     color: #e0e0e0b7;
+    font-weight: 400;
+
 }
 
 
@@ -302,7 +308,7 @@ body {
 
 .platformImage img {
     width: 90%;
-    box-shadow: 5px 10px 25px rgba(74, 9, 104, 0.575);
+    box-shadow: 5px 10px 25px rgba(255, 253, 253, 0.096);
     border-radius: 20px;
 }
 
@@ -323,14 +329,15 @@ body {
 
 .taxContainer {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, auto);
     align-items: center;
     gap: 20px;
     padding: 10 40;
 }
 
 .tax {
-    padding: 15 30px;
+    padding: 10 10 20 10;
+    height: 210px;
     background-color: #1B1C1E;
     border-radius: 20px;
     max-width: 300px;
@@ -387,14 +394,15 @@ body {
 .roadMapContainer {
     display: grid;
     grid-template-rows: repeat(2, auto);
+    
 }
 
 .firstRoadmap {
-    padding: 10 40;
+    border:1px red solid;
     margin: 40 0;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: space-around;
+    align-items: center;
 
 
 }
@@ -511,11 +519,11 @@ footer {
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    padding:20px;
+    padding: 20px;
 }
 
 .tokenStats {
-    padding:0 20;
+    padding: 10 20;
     border-radius: 10px;
     background-color: #1B1C1E;
 }
@@ -523,10 +531,10 @@ footer {
 .tokenNumber {
     font-size: 38px;
     font-family: MainTitle;
-    margin:10 0;
+    margin: 10 0;
 }
 
-.tokenNumber::before { 
+.tokenNumber::before {
     content: "";
     display: flex;
     flex-direction: column;
@@ -534,32 +542,150 @@ footer {
     height: 8px;
     border-radius: 20px;
     margin: 15 0;
-    background: linear-gradient(90deg, #a56872, #fe5d008f 100%);
 
 }
 
 .tokenTitle {
-    font-family: Descriptions; 
+    font-family: Descriptions;
     color: #e0e0e0b7;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 #chart {
-    padding:10 100;
-    width: 100%;
-    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
 
-#monthsContainer { grid-area: 1 / 1 / 2 / 3; }
-#artistFund { grid-area: 1 / 3 / 2 / 4; }
-#earlyBackers { grid-area: 1 / 4 / 2 / 5; }
-#treasury { grid-area: 1 / 5 / 2 / 6; }
-#chart { grid-area: 2 / 1 / 4 / 3;}
-#advisors { grid-area: 2 / 3 / 3 / 4; }
-#rewards { grid-area: 2 / 4 / 3 / 5; }
-#balancerLBP { grid-area: 2 / 5 / 3 / 6; }
-#initialLiquidity { grid-area: 3 / 3 / 4 / 4; }
-#team { grid-area: 3 / 4 / 4 / 5; }
-#airdrop { grid-area: 3 / 5 / 4 / 6; }
+
+#monthsContainer {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+#artistFund {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+#earlyBackers {
+    grid-area: 1 / 4 / 2 / 5;
+}
+
+#treasury {
+    grid-area: 1 / 5 / 2 / 6;
+}
+
+#chart {
+    grid-area: 2 / 1 / 4 / 3;
+}
+
+#advisors {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+#rewards {
+    grid-area: 2 / 4 / 3 / 5;
+}
+
+#balancerLBP {
+    grid-area: 2 / 5 / 3 / 6;
+}
+
+#initialLiquidity {
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+#team {
+    grid-area: 3 / 4 / 4 / 5;
+}
+
+#airdrop {
+    grid-area: 3 / 5 / 4 / 6;
+}
+
+
+
+
+
+#monthsContainer>h1::before {
+    background-color: white;
+}
+
+#artistFund>h1::before {
+    background-color: #c53ba9;
+}
+
+#earlyBackers>h1::before {
+    background-color: #0072c5;
+}
+
+#treasury>h1::before {
+    background-color: #48b2ff;
+}
+
+#advisors>h1::before {
+    background-color: #9e7df4;
+}
+
+#rewards>h1::before {
+    background-color: #04d1f7;
+}
+
+#balancerLBP>h1::before {
+    background-color: #48b2ff;
+}
+
+#initialLiquidity>h1::before {
+    background-color: #02ffff;
+}
+
+#team>h1::before {
+    background-color: #00dcff;
+}
+
+#airdrop>h1::before {
+    background-color: #00a1e3;
+}
+
+
+/*RESPONSIVE */
+
+
+@media(max-width:1480px) {
+
+    .header {
+        padding: 20 70px;
+    }
+
+    .styledSection {
+        padding: 40 100px;
+
+    }
+
+    /*Features */
+
+    .gridFeatures div {
+        padding:10 20;
+    }
+
+    .marketplaceButton {
+        margin-top:7%;
+    }
+
+
+     /*Marketplace*/
+
+     .platformContent {
+        width: 100%;
+        padding: 10 30px; 
+    }
+
+    /*RoadMap */
+
+
+
+
+    
+
+}
