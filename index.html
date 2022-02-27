@@ -11,11 +11,12 @@
     <!--Stylesheet-->
     <link rel="stylesheet" href="css/style.css">
 
+    <!--Chart.js-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
     <!--Jquery-->
     <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.js"></script>
 
-    <!--Chart.js-->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -28,35 +29,38 @@
 <body>
 
 
-    <header class="header">
-        <div class="logoAndNav">
-            <div class="logoContainer">
-                <a href="#">
-                    <img src="assets/images/spectrum.png" alt="">
-                </a>
+    <header class="header" id="header">
+      
+            <div class="logoAndNav">
+                <div class="logoContainer">
+                    <a href="#">
+                        <img src="assets/images/spectrum.png" alt="">
+                    </a>
+                </div>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="">Features </a> </li>
+                        <li><a href="">Marketplace </a></li>
+                        <li><a href="">Tokenomics </a></li>
+                        <li><a href="">Roadmap </a></li>
+                    </ul>
+
+                </nav>
+
             </div>
-            <nav class="navbar">
-                <ul>
-                    <li>How it works? </li>
-                    <li>Tokenomics</li>
-                    <li>Roadmap</li>
-                </ul>
 
-            </nav>
-
-        </div>
-
-        <div class="socialLinkAndButton">
-            <div class="socialLinks">
-                <ul>
-                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-                    <li><a href=""><i class="fa-brands fa-telegram"></i></a> </li>
-                    <li><a href=""><i class="fa-brands fa-medium"></i></a> </li>
-                    <li><a href=""><i class="fa-brands fa-discord"></i></a></li>
-                </ul>
+            <div class="socialLinkAndButton">
+                <div class="socialLinks">
+                    <ul>
+                        <li><a id="twitter" href=""><i class="fa-brands fa-twitter"></i></a></li>
+                        <li><a id="telegram" href=""><i class="fa-brands fa-telegram"></i></a> </li>
+                        <li><a id="medium" href=""><i class="fa-brands fa-medium"></i></a> </li>
+                        <li><a id="discord" href=""><i class="fa-brands fa-discord"></i></a></li>
+                    </ul>
+                </div>
+                <button>Get in</button>
             </div>
-            <button>Get in</button>
-        </div>
+        
     </header>
 
 
@@ -424,6 +428,7 @@
     </footer>
 
     <script src="js/chart.js"></script>
+    <script src="js/navbar.js"></script>
 </body>
 
 </html>

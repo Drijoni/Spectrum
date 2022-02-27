@@ -47,9 +47,7 @@ body {
 
 /* Sections and titles with descriptions */
 .styledSection {
-
     padding: 40 140px;
-
 }
 
 .sectionTitleContainer p {
@@ -57,7 +55,6 @@ body {
     font-size: 16px;
     padding: 20 40;
 }
-
 
 .sectionTitle {
     font-size: 32px;
@@ -68,21 +65,28 @@ body {
 
 /* Header */
 .header {
-    margin: 10 0 0 0;
-    padding: 0 160;
+    display: block;
+    transform: .5s;
+    padding: 0 140;
+    z-index:999;
+    position: fixed;
+    width: 100%;
+    left: 0;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
+    flex-direction: row;   
+    
 }
+
 
 .logoAndNav, .socialLinkAndButton{
     display: flex;
     flex-direction: row;
     align-items: center;
-
 }
 
+.socialLinkAndButton {
+    margin-left: auto;
+}
 
 
 .navbar ul {
@@ -96,6 +100,16 @@ body {
 
 .navbar ul li {
     padding: 10 20;
+
+}
+
+.navbar ul li a:hover {
+    transition: .3s;
+    color: rgba(70, 25, 162, 1);
+}
+
+.navbar ul li a {
+    text-decoration: none;
 }
 
 
@@ -105,7 +119,8 @@ body {
 
 .socialLinks ul {
     list-style: none;
-    display: flex;   
+    display: flex;  
+    margin:0 40 0 0; 
 }
 
 .socialLinks ul li {
@@ -119,8 +134,27 @@ body {
     color: transparent;
     background: linear-gradient(90deg, rgba(100, 200, 224, 1) 15%, rgba(137, 100, 215, 1) 41%, rgba(70, 25, 162, 1) 86%);
    */
+
    color: white;
 
+}
+
+.socialLinks ul li a i:hover {
+    transition: .3s;
+}
+
+#twitter i:hover {
+    color: #00acee;
+}
+
+#telegram i:hover {
+    color: #229ED9;
+}
+#medium i:hover {
+    color: rgb(100, 99, 99);
+}
+#discord i:hover {
+    color: #5865F2;
 }
 
 .socialLinkAndButton button {
@@ -132,13 +166,31 @@ body {
     color: black;
     border: none;
     outline: none;
-    border-radius: 20px;
+    border-radius: 20px;    
+    cursor: pointer;
 }
+
+.socialLinkAndButton button:hover {
+    transition: .5s;
+    background: linear-gradient(90deg, rgba(98, 248, 188, 0.527) 31%, rgba(105, 251, 234, 0.815) 79%);
+ 
+}
+
+
+/*Sticky Nav*/
+
+.header.sticky {
+    background-color:  rgb(0, 0, 0);
+    position: fixed;
+    transition: .5s;
+    padding:10 140;
+}
+
 
 /* First Section */
 
 #Home {
-    padding: 0 0 0 140;
+    padding: 140 0 0 140;
 
 }
 
@@ -696,6 +748,23 @@ footer {
     background-color: #00a1e3;
 }
 
+/*Scrollbar */
+
+::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+  ::-webkit-scrollbar-track {
+    border-radius: 10px;
+    z-index: 99;
+    background-color:transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: #e78632;
+    background-image:-webkit-linear-gradient(45deg,rgba(255,255,255,.3) 20%,transparent 20%,transparent 40%,rgba(255, 255, 255, 0.3) 40%,rgba(255,255,255,.3) 60%,transparent 60%,transparent 80%,rgba(255, 255, 255, 0.3) 80%);
+    border-radius: 10px;
+  }
+  
 
 /*RESPONSIVE */
 
