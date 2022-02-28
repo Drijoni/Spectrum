@@ -48,7 +48,11 @@ body {
 
 /* Sections and titles with descriptions */
 .styledSection {
-    padding: 20 140 ;
+    padding: 40 140;
+}
+
+#tokenomics, #roadmap {
+    padding:80px 140;
 }
 
 .sectionTitleContainer p {

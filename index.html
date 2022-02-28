@@ -225,69 +225,79 @@
             </div>
         </section>
 
-        <!--Tax Dist...-->
-        <section class="styledSection" id="taxDistribution">
-            <div class="sectionTitleContainer">
-                <h1 class="sectionTitle">Tax distribution</h1>
-                <p>There is a 10% tax on every transaction:
-                </p>
-            </div>
-            <div class="taxContainer">
+        <!--Tokenomics-->
+        <section class="styledSection" id="tokenomics">
+            <h1 class="sectionTitle"> Tokenomics</h1>
+            <div class="tokenomicsContainer">
 
+                <div id="monthsContainer" class="tokenStats">
+                    <h1 class="tokenNumber">6 Months</h1>
+                    <p class="tokenTitle">Locked for team & early <br> backers + 6 months vesting</p>
+                </div>
 
-                <div class="tax">
-                    <div class="taxPercentage">
-                        <p class="percentageDef">3%</p>
+                <div id="artistFund" class="tokenStats">
+                    <h1 class="tokenNumber">5%</h1>
+                    <p class="tokenTitle">Artist's Fund</p>
+                </div>
+
+                <div id="earlyBackers" class="tokenStats">
+                    <h1 class="tokenNumber">15%</h1>
+                    <p class="tokenTitle">Early backers</p>
+                </div>
+
+                <div id="treasury" class="tokenStats">
+                    <h1 class="tokenNumber">15%</h1>
+                    <p class="tokenTitle">Treasury</p>
+                </div>
+
+                <div id="chart" class="tokenStats">
+                    <div>
+                        <canvas id="tokenChart" height="300" width="300">
+
+                        </canvas>
+
                     </div>
-                    <div class="taxDescription">
-                        <p>
-                            of every transaction (buy, sell or swap) will be added to the artists fund. We will use
-                            those funds to buy and trade NFTs and in the future reward artists.
-                        </p>
+                    <div id="tokenInfonContainer">
+                        <p id="token">1B</p>
+                        <p id="supply">Total Supply</p>
                     </div>
                 </div>
 
-                <div class="tax">
-                    <div class="taxPercentage">
-                        <p class="percentageBlue">2%</p>
-                    </div>
-                    <div class="taxDescription">
-                        <p>
-                            of every transaction is re-distributed evenly to all holders. This means that the
-                            amount of tokens in your wallet increases automatically over time.
-                        </p>
-                    </div>
+                <div id="advisors" class="tokenStats">
+                    <h1 class="tokenNumber">5%</h1>
+                    <p class="tokenTitle">Advisors</p>
                 </div>
 
-                <div class="tax">
-                    <div class="taxPercentage">
-                        <p class="percentageOrange">2%</p>
-                    </div>
-                    <div class="taxDescription">
-                        <p>
-                            of every transaction is automatically added to the liquidity pool. Liquidity will
-                            automatically grow over time as the token is traded.
-
-                        </p>
-                    </div>
+                <div id="rewards" class="tokenStats">
+                    <h1 class="tokenNumber">16%</h1>
+                    <p class="tokenTitle">Rewards</p>
                 </div>
 
+                <div id="balancerLBP" class="tokenStats">
+                    <h1 class="tokenNumber">5%</h1>
+                    <p class="tokenTitle">Balancer LBP</p>
+                </div>
 
-                <div class="tax">
-                    <div class="taxPercentage">
-                        <p class="percentageLightRed">3%</p>
-                    </div>
-                    <div class="taxDescription">
-                        <p>
-                            of each transaction goes to Marketing and Development. It is key and
-                            being able to have growing marketing funds would help us in the long run.
+                <div id="initialLiquidity" class="tokenStats">
+                    <h1 class="tokenNumber">20%</h1>
+                    <p class="tokenTitle">Initial Liquidity</p>
+                </div>
 
-                        </p>
-                    </div>
+                <div id="team" class="tokenStats">
+                    <h1 class="tokenNumber">9%</h1>
+                    <p class="tokenTitle">Team</p>
+
+                </div>
+
+                <div id="airdrop" class="tokenStats">
+                    <h1 class="tokenNumber">7%</h1>
+                    <p class="tokenTitle">AirDrops, Partners & Ecosystem</p>
+
                 </div>
 
             </div>
         </section>
+
 
         <!--RoadMap-->
         <section class="styledSection" id="roadmap">
@@ -398,78 +408,70 @@
         </section>
 
 
-        <!--Tokenomics-->
-        <section class="styledSection" id="tokenomics">
-            <h1 class="sectionTitle"> Tokenomics</h1>
-            <div class="tokenomicsContainer">
+        <!--Tax Dist...-->
+        <section class="styledSection" id="taxDistribution">
+            <div class="sectionTitleContainer">
+                <h1 class="sectionTitle">Tax distribution</h1>
+                <p>There is a 10% tax on every transaction:
+                </p>
+            </div>
+            <div class="taxContainer">
 
-                <div id="monthsContainer" class="tokenStats">
-                    <h1 class="tokenNumber">6 Months</h1>
-                    <p class="tokenTitle">Locked for team & early <br> backers + 6 months vesting</p>
-                </div>
 
-                <div id="artistFund" class="tokenStats">
-                    <h1 class="tokenNumber">5%</h1>
-                    <p class="tokenTitle">Artist's Fund</p>
-                </div>
-
-                <div id="earlyBackers" class="tokenStats">
-                    <h1 class="tokenNumber">15%</h1>
-                    <p class="tokenTitle">Early backers</p>
-                </div>
-
-                <div id="treasury" class="tokenStats">
-                    <h1 class="tokenNumber">15%</h1>
-                    <p class="tokenTitle">Treasury</p>
-                </div>
-
-                <div id="chart" class="tokenStats">
-                    <div>
-                        <canvas id="tokenChart" height="300" width="300">
-
-                        </canvas>
-
+                <div class="tax">
+                    <div class="taxPercentage">
+                        <p class="percentageDef">3%</p>
                     </div>
-                    <div id="tokenInfonContainer">
-                        <p id="token">1B</p>
-                        <p id="supply">Total Supply</p>
+                    <div class="taxDescription">
+                        <p>
+                            of every transaction (buy, sell or swap) will be added to the artists fund. We will use
+                            those funds to buy and trade NFTs and in the future reward artists.
+                        </p>
                     </div>
                 </div>
 
-                <div id="advisors" class="tokenStats">
-                    <h1 class="tokenNumber">5%</h1>
-                    <p class="tokenTitle">Advisors</p>
+                <div class="tax">
+                    <div class="taxPercentage">
+                        <p class="percentageBlue">2%</p>
+                    </div>
+                    <div class="taxDescription">
+                        <p>
+                            of every transaction is re-distributed evenly to all holders. This means that the
+                            amount of tokens in your wallet increases automatically over time.
+                        </p>
+                    </div>
                 </div>
 
-                <div id="rewards" class="tokenStats">
-                    <h1 class="tokenNumber">16%</h1>
-                    <p class="tokenTitle">Rewards</p>
+                <div class="tax">
+                    <div class="taxPercentage">
+                        <p class="percentageOrange">2%</p>
+                    </div>
+                    <div class="taxDescription">
+                        <p>
+                            of every transaction is automatically added to the liquidity pool. Liquidity will
+                            automatically grow over time as the token is traded.
+
+                        </p>
+                    </div>
                 </div>
 
-                <div id="balancerLBP" class="tokenStats">
-                    <h1 class="tokenNumber">5%</h1>
-                    <p class="tokenTitle">Balancer LBP</p>
-                </div>
 
-                <div id="initialLiquidity" class="tokenStats">
-                    <h1 class="tokenNumber">20%</h1>
-                    <p class="tokenTitle">Initial Liquidity</p>
-                </div>
+                <div class="tax">
+                    <div class="taxPercentage">
+                        <p class="percentageLightRed">3%</p>
+                    </div>
+                    <div class="taxDescription">
+                        <p>
+                            of each transaction goes to Marketing and Development. It is key and
+                            being able to have growing marketing funds would help us in the long run.
 
-                <div id="team" class="tokenStats">
-                    <h1 class="tokenNumber">9%</h1>
-                    <p class="tokenTitle">Team</p>
-
-                </div>
-
-                <div id="airdrop" class="tokenStats">
-                    <h1 class="tokenNumber">7%</h1>
-                    <p class="tokenTitle">AirDrops, Partners & Ecosystem</p>
-
+                        </p>
+                    </div>
                 </div>
 
             </div>
         </section>
+
 
     </div>
     <!--Footer-->
