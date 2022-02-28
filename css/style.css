@@ -47,7 +47,7 @@ body {
 
 /* Sections and titles with descriptions */
 .styledSection {
-    padding: 40 140px;
+    padding: 0 140 ;
 }
 
 .sectionTitleContainer p {
@@ -67,13 +67,14 @@ body {
 .header {
     display: block;
     transform: .5s;
-    padding: 0 140;
+    padding: 0 120;
     z-index:999;
     position: fixed;
     width: 100%;
     left: 0;
     display: flex;
     flex-direction: row;   
+    transition: .5s;
     
 }
 
@@ -170,10 +171,9 @@ body {
     cursor: pointer;
 }
 
-.socialLinkAndButton button:hover {
-    transition: .5s;
-    background: linear-gradient(90deg, rgba(98, 248, 188, 0.527) 31%, rgba(105, 251, 234, 0.815) 79%);
- 
+button:hover{ 
+    transition: .4s;
+    box-shadow: rgba(98, 248, 187, 1) 0px 0px 15px;
 }
 
 
@@ -263,7 +263,7 @@ body {
     outline: none;
     border-radius: 20px;
     margin: 10;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px 0px;
+    cursor: pointer;
 }
 
 
@@ -281,8 +281,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    padding: 0 0 140 0;
+    padding:80 0 80 0;
 }
 
 
@@ -323,11 +322,9 @@ body {
 }
 
 .marketplaceDescription {
-
     font-size: 18px;
     color: #e0e0e0b7;
     font-weight: 400;
-
 }
 
 
@@ -518,8 +515,6 @@ body {
 
 #roadMapRed h2 {
     background: linear-gradient(90deg, rgba(254, 94, 0, 1), rgba(246, 69, 98, 1), rgba(194, 45, 225, 1), rgba(246, 69, 98, 1), rgba(254, 94, 0, 1));
-
-
 }
 
 #roadMapBlue {
@@ -760,10 +755,11 @@ footer {
     background-color:transparent;
   }
   ::-webkit-scrollbar-thumb {
-    background-color: #e78632;
+    background-color: white;
     background-image:-webkit-linear-gradient(45deg,rgba(255,255,255,.3) 20%,transparent 20%,transparent 40%,rgba(255, 255, 255, 0.3) 40%,rgba(255,255,255,.3) 60%,transparent 60%,transparent 80%,rgba(255, 255, 255, 0.3) 80%);
     border-radius: 10px;
   }
+  
   
 
 /*RESPONSIVE */
