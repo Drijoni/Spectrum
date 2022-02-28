@@ -29,36 +29,6 @@ var data = {
     
 };
 
-Chart.pluginService.register({
-  beforeDraw: function (chart) {
-    var width = chart.chart.width,
-      height = chart.chart.height,
-      ctx = chart.chart.ctx;
-
-    ctx.restore();
-    var fontSize = (height / 114).toFixed(2);
-    ctx.font = fontSize + "em sans-serif";
-    ctx.textBaseline = "middle";
-
-    var text = "1B";
-    var desc = "Total tokens"
-    var descX = Math.round((width - ctx.measureText(text).width) / 2 -30 );
-    var descY = height / 1.8;
-
-
-    var textX = Math.round((width - ctx.measureText(text).width) / 2+20 );
-    var textY = height / 2.1;
-
-    ctx.font = '18px MenuShapiro';
-    ctx.fillStyle = 'white';
-
-    
-    ctx.fillText(text, textX, textY);
-    ctx.fillText(desc, descX, descY);
-    ctx.save();
-  }
-});
-
 var chart = new Chart(document.getElementById('tokenChart'), {
   type: 'doughnut',
   data: data,

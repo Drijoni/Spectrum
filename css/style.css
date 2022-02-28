@@ -39,6 +39,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -47,7 +48,7 @@ body {
 
 /* Sections and titles with descriptions */
 .styledSection {
-    padding: 0 140 ;
+    padding: 20 140 ;
 }
 
 .sectionTitleContainer p {
@@ -168,10 +169,11 @@ body {
     border: none;
     outline: none;
     border-radius: 20px;    
-    cursor: pointer;
+  
 }
 
 button:hover{ 
+    cursor: pointer;
     transition: .4s;
     box-shadow: rgba(98, 248, 187, 1) 0px 0px 15px;
 }
@@ -271,6 +273,7 @@ button:hover{
     width: 50%;
     display: flex;
     border-radius: 30px;
+    margin:-50 10;
 }
 
 
@@ -652,7 +655,24 @@ footer {
     justify-content: center;
 }
 
+#token {
+    font-size: 28px;
+}
 
+#supply {
+    color:#C3C3E1;
+    font-weight: 100;
+    margin:10 0;
+}
+
+#tokenInfonContainer {
+    font-family: MiddleWide;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 
 #monthsContainer {

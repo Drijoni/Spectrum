@@ -39,10 +39,10 @@
             </div>
             <nav class="navbar">
                 <ul>
-                    <li><a href="">Features </a> </li>
-                    <li><a href="">Marketplace </a></li>
-                    <li><a href="">Tokenomics </a></li>
-                    <li><a href="">Roadmap </a></li>
+                    <li><a href="#marketplace">Marketplace </a></li>
+                    <li><a href="#features">Features </a> </li>
+                    <li><a href="#tokenomics">Tokenomics </a></li>
+                    <li><a href="#roadmap">Roadmap </a></li>
                 </ul>
 
             </nav>
@@ -92,7 +92,7 @@
         </section>
 
         <!--Upcoming Marketplace-->
-        <section class="styledSection">
+        <section class="styledSection" id="marketplace">
 
 
             <div class="platformContainer">
@@ -119,9 +119,9 @@
 
             </div>
         </section>
-        
+
         <!--Features-->
-        <section class="styledSection">
+        <section class="styledSection" id="features">
 
             <div class="featuresContainer">
                 <h1 class="sectionTitle">Features</h1>
@@ -286,7 +286,7 @@
         </section>
 
         <!--RoadMap-->
-        <section class="styledSection">
+        <section class="styledSection" id="roadmap">
             <div class="roadMapContainer">
                 <h1 class="sectionTitle">Roadmap</h1>
 
@@ -395,8 +395,7 @@
 
 
         <!--Tokenomics-->
-
-        <section class="styledSection">
+        <section class="styledSection" id="tokenomics">
             <h1 class="sectionTitle"> Tokenomics</h1>
             <div class="tokenomicsContainer">
 
@@ -422,7 +421,14 @@
 
                 <div id="chart" class="tokenStats">
                     <div>
-                        <canvas id="tokenChart" height="300" width="300"></canvas>
+                        <canvas id="tokenChart" height="300" width="300">
+
+                        </canvas>
+
+                    </div>
+                    <div id="tokenInfonContainer">
+                        <p id="token">1B</p>
+                        <p id="supply">Total Supply</p>
                     </div>
                 </div>
 
