@@ -48,12 +48,9 @@ body {
 
 /* Sections and titles with descriptions */
 .styledSection {
-    padding: 40 140;
+    padding:80 140 0 140;
 }
 
-#tokenomics, #roadmap, #marketplace {
-    padding:60px 140;
-}
 
 .sectionTitleContainer p {
     font-family: MiddleWide;
@@ -288,17 +285,17 @@ button:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding:80 0 80 0;
+    border:1px solid red;
 }
 
-
 .gridFeatures {
-    padding: 30px;
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-template-rows: repeat(3, auto);
-    grid-column-gap: 30px;
-    grid-row-gap: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap:50px;
+    cursor: pointer;
+    height: 200px;
+
 }
 
 .gridFeatures i {
@@ -306,24 +303,28 @@ button:hover{
     font-size: 20px;
 }
 
-.gridFeatures div {
+.portfolio , .giveaways, .deals {
+    width: 100%;
+    height: 50%;
     background-color: #131313;
     box-shadow: 0 3px 6px 0 rgb(0 0 0 / 25%);
     padding: 20 30;
     border-radius: 10px;
     font-family:MiddleWide;
     line-height: 1.2;
+    transition: .5s;
+
 
 }
 
-.gridFeatures div h1 {
-    margin: 20 0;
-    font-size: 32px;
-    font-family: ShapiroT;
-}
 
 .gridFeatures div h2 {
     margin: 0 0 10 0;
+    font-size: 18px;
+}
+
+.gridFeatures div h2::after {
+	content: " \f107";
     font-size: 18px;
 }
 
@@ -333,57 +334,23 @@ button:hover{
     font-family: Descriptions;
 }
 
-.marketplaceDescription {
-    font-size: 18px;
-    color: #e0e0e0b7;
-    font-weight: 400;
+.dropdownDescription {  
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    transition: .5s;
 }
 
 
-.marketplace {
-    grid-area: 1 / 1 / 4 / 3;
-    /* background:linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(10, 10, 10, 0.774)), url('../assets/images/spectrumPurple.png') no-repeat;
-    */
-    border: cover;
-    display: flex;
-    flex-direction: column;
-}
-
-.marketplace i {
-    font-size: 30px;
-}
-
-.marketplaceButton {
-    margin-top: 10%;
-    padding: 10 0;
-    background: linear-gradient(90deg, rgba(98, 248, 187, 1) 31%, rgba(105, 251, 233, 1) 79%);
-    font-weight: bold;
-    font-family: MenuShapiro;
-    font-size: 16px;
-    color: black;
-    border: none;
-    outline: none;
-    border-radius: 20px;
-    width: 30%;
-}
-
-.portfolio {
-    grid-area: 1 / 3 / 2 / 5;
-}
-
-.giveaways {
-    grid-area: 2 / 3 / 3 / 5;
-}
-
-.deals {
-    grid-area: 3 / 3 / 4 / 5;
-}
 
 /* Hover Effect*/
 
-.gridFeatures>div:hover {
-    transition: .4s;
-    transform: scale(1.05);   
+.gridFeatures>div:hover, .gridFeatures>div:hover .dropdownDescription {
+    transition: .5s;
+    visibility: visible;
+     opacity: 1;
+     height: 80%;
+
 }
 
 
@@ -407,11 +374,11 @@ button:hover{
 }
 
 .platformContent {
-    width: 80%;
-    padding: 10 30px;
+    width: 95%;
     display: flex;
     font-family: MiddleWide;
     line-height: 1.5;
+    /* Image not as same size as the others*/
 }
 
 .platformContent p {
@@ -821,17 +788,14 @@ footer {
         padding:10 20;
     }
 
-    .marketplaceButton {
-        margin-top:7%;
+    .gridFeatures>div:hover, .gridFeatures>div:hover .dropdownDescription {
+        transition: .5s;
+        visibility: visible;
+         opacity: 1;
+         height: 90%;
+    
     }
 
-
-     /*Marketplace*/
-
-     .platformContent {
-        width: 100%;
-        padding: 10 30px; 
-    }
 
     /*RoadMap */
 
