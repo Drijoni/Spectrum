@@ -43,7 +43,7 @@
 }
 
 body {
-    background-color: #0a0214;
+    background-color: #131313;
 }
 
 /* Sections and titles with descriptions */
@@ -51,8 +51,8 @@ body {
     padding: 40 140;
 }
 
-#tokenomics, #roadmap {
-    padding:80px 140;
+#tokenomics, #roadmap, #marketplace {
+    padding:60px 140;
 }
 
 .sectionTitleContainer p {
