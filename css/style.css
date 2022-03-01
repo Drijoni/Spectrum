@@ -69,7 +69,7 @@ body {
 .header {
     display: block;
     transform: .5s;
-    padding: 0 120;
+    padding: 0 20 0 120;
     z-index:999;
     position: fixed;
     width: 100%;
@@ -186,7 +186,7 @@ button:hover{
     background-color:  rgb(0, 0, 0);
     position: fixed;
     transition: .5s;
-    padding:10 140;
+    padding:20 140;
 }
 
 
@@ -194,14 +194,12 @@ button:hover{
 
 #Home {
     padding: 140 0 0 140;
-
 }
 
 .allContent {
     display: flex;
     flex-direction: row;
     align-items: center;
-
 }
 
 
@@ -294,7 +292,7 @@ button:hover{
     gap:50px;
     cursor: pointer;
     height: 200px;
-
+    padding:0 30;
 }
 
 .gridFeatures i {
@@ -320,11 +318,16 @@ button:hover{
 .gridFeatures div h2 {
     margin: 0 0 10 0;
     font-size: 18px;
+    display: flex;
+    align-items: center;
 }
 
 .gridFeatures div h2::after {
-	content: " \f107";
-    font-size: 18px;
+    font-family: 'Font Awesome 5 Free';
+	content: "\f107";
+    font-size: 28px;
+    margin:0 10;
+    color: #815dee;
 }
 
 .gridFeatures div p {
@@ -344,14 +347,12 @@ button:hover{
 
 /* Hover Effect*/
 
-.gridFeatures>div:hover, .gridFeatures>div:hover .dropdownDescription {
+.gridFeatures>div:hover, .gridFeatures>div:hover .dropdownDescription{
     transition: .5s;
     visibility: visible;
      opacity: 1;
      height: 80%;
-
 }
-
 
 
 /* Marketplace platform */
@@ -363,7 +364,6 @@ button:hover{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-
 }
 
 .platformImage img {
@@ -602,7 +602,8 @@ footer {
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    padding: 20px;
+    padding: 30px;
+    
 }
 
 .tokenStats {
@@ -639,7 +640,7 @@ footer {
     align-items: center;
     justify-content: center;
 }
-
+    
 #token {
     font-size: 28px;
 }
@@ -757,7 +758,7 @@ footer {
   ::-webkit-scrollbar-track {
     border-radius: 10px;
     z-index: 99;
-    background-color:transparent;
+    background-color:black;;
   }
   ::-webkit-scrollbar-thumb {
     background-color: white;
@@ -772,8 +773,8 @@ footer {
 
 @media(max-width:1480px) {
 
-    .header {
-        padding: 20 70px;
+    .header.sticky  {
+        padding:20 120;
     }
 
     .styledSection {
@@ -783,24 +784,73 @@ footer {
 
     /*Features */
 
-    .gridFeatures div {
-        padding:10 20;
-    }
-
-    .gridFeatures>div:hover, .gridFeatures>div:hover .dropdownDescription {
-        transition: .5s;
-        visibility: visible;
-         opacity: 1;
+    .gridFeatures>div:hover, .gridFeatures>div:hover .dropdownDescription { 
          height: 90%;
+    }
+}
+
+@media(max-width:1400px) {
+
+    /*Features*/
+
+    .gridFeatures>div:hover, .gridFeatures>div:hover .dropdownDescription { 
+        height: 95%;
+   }
+
+   /*Taxes*/
+
+   .tax {
+       height: 90%;
+   }
+
+}
+
+
+@media(max-width:1280px) {
     
+    /*Nav*/
+    .header {
+        padding: 0 20 0 60;
+    }
+    
+
+    /*Hero Section*/
+    #Home{
+        padding: 140 0 0 60;
+    }
+
+    /*Sections*/
+
+    .styledSection {
+        padding:40;
+    }
+
+    /* Marketplace */
+    .platform {
+        padding: 0 30;
+    }
+    .platformContent{ 
+        width: 100%;
+    }
+
+    .platformContent p {
+        width: 100%;
+        font-size: 14px;
+        padding:0;
     }
 
 
-    /*RoadMap */
+}
+
+@media(max-width:1270px) {
+    .socialLinkAndButton, .navbar {
+        display: none;
+    }
+}
 
 
 
+@media(max-width:1150px) {
 
     
-
 }
