@@ -48,7 +48,7 @@ body {
 
 /* Sections and titles with descriptions */
 .styledSection {
-    padding:80 140 0 140;
+    padding: 80 140 0 140;
 }
 
 
@@ -61,7 +61,7 @@ body {
 .sectionTitle {
     font-size: 32px;
     font-family: MainTitle;
-    padding: 20 40 40 40;
+    padding: 20 40 20 40;
 }
 
 
@@ -70,18 +70,19 @@ body {
     display: block;
     transform: .5s;
     padding: 0 20 0 120;
-    z-index:999;
+    z-index: 999;
     position: fixed;
     width: 100%;
     left: 0;
     display: flex;
-    flex-direction: row;   
+    flex-direction: row;
     transition: .5s;
-    
+    align-items: center;
+    justify-content: space-between;
 }
 
 
-.logoAndNav, .socialLinkAndButton{
+.logoAndNav, .socialLinkAndButton {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -117,28 +118,28 @@ body {
 
 
 .logoContainer a img {
-    width: 80px;
+    width: 100px;
 }
 
 .socialLinks ul {
     list-style: none;
-    display: flex;  
-    margin:0 40 0 0; 
+    display: flex;
+    margin: 0 40 0 0;
 }
 
 .socialLinks ul li {
     font-size: 28px;
-    padding:0 10px;
+    padding: 0 10px;
 }
 
 .socialLinks ul li a i {
-   /*
+    /*
     -webkit-background-clip: text !important;
     color: transparent;
     background: linear-gradient(90deg, rgba(100, 200, 224, 1) 15%, rgba(137, 100, 215, 1) 41%, rgba(70, 25, 162, 1) 86%);
    */
 
-   color: white;
+    color: white;
 
 }
 
@@ -153,9 +154,11 @@ body {
 #telegram i:hover {
     color: #229ED9;
 }
+
 #medium i:hover {
     color: rgb(100, 99, 99);
 }
+
 #discord i:hover {
     color: #5865F2;
 }
@@ -169,24 +172,28 @@ body {
     color: black;
     border: none;
     outline: none;
-    border-radius: 20px;    
-  
+    border-radius: 20px;
+
 }
 
-button:hover{ 
+button:hover {
     cursor: pointer;
     transition: .4s;
     box-shadow: rgba(98, 248, 187, 1) 0px 0px 15px;
 }
 
 
+#toggleMenu {
+    display: none;
+}
+
 /*Sticky Nav*/
 
 .header.sticky {
-    background-color:  rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
     position: fixed;
     transition: .5s;
-    padding:20 140;
+    padding: 20 140;
 }
 
 
@@ -206,7 +213,7 @@ button:hover{
 
 .contentContainer {
     width: 50%;
-    padding:0 0 0 20px;
+    padding: 0 0 0 20px;
 }
 
 .contentContainer * {
@@ -272,7 +279,7 @@ button:hover{
     width: 50%;
     display: flex;
     border-radius: 30px;
-    margin:-50 10;
+    margin: -50 10;
 }
 
 
@@ -289,29 +296,28 @@ button:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap:50px;
+    gap: 50px;
     cursor: pointer;
     height: 200px;
-    padding:0 30;
+    padding: 0 30;
+
 }
 
 .gridFeatures i {
-    margin:0 0 10 0;
+    margin: 0 0 10 0;
     font-size: 20px;
 }
 
-.portfolio , .giveaways, .deals {
+.portfolio, .giveaways, .deals {
     width: 100%;
     height: 50%;
     background-color: #131313;
     box-shadow: 0 3px 6px 0 rgb(0 0 0 / 25%);
     padding: 20 30;
     border-radius: 10px;
-    font-family:MiddleWide;
+    font-family: MiddleWide;
     line-height: 1.2;
     transition: .5s;
-
-
 }
 
 
@@ -324,9 +330,9 @@ button:hover{
 
 .gridFeatures div h2::after {
     font-family: 'Font Awesome 5 Free';
-	content: "\f107";
+    content: "\f107";
     font-size: 28px;
-    margin:0 10;
+    margin: 0 10;
     color: #815dee;
 }
 
@@ -334,9 +340,10 @@ button:hover{
     font-size: 16px;
     color: #e0e0e0b7;
     font-family: Descriptions;
+
 }
 
-.dropdownDescription {  
+.dropdownDescription {
     visibility: hidden;
     opacity: 0;
     transition: visibility 0s, opacity 0.5s linear;
@@ -347,11 +354,11 @@ button:hover{
 
 /* Hover Effect*/
 
-.gridFeatures>div:hover, .gridFeatures>div:hover .dropdownDescription{
+.gridFeatures>div:hover, .gridFeatures>div:hover .dropdownDescription {
     transition: .5s;
     visibility: visible;
-     opacity: 1;
-     height: 80%;
+    opacity: 1;
+    height: 80%;
 }
 
 
@@ -373,7 +380,7 @@ button:hover{
 }
 
 .platformContent {
-    width: 95%;
+    width: 100%;
     display: flex;
     font-family: MiddleWide;
     line-height: 1.5;
@@ -382,8 +389,8 @@ button:hover{
 
 .platformContent p {
     font-size: 18px;
-    width: 100%;
-    padding: 20px;
+
+
 }
 
 /* Tax Distribution*/
@@ -453,19 +460,11 @@ button:hover{
 
 /* RoadMap */
 
-.roadMapContainer {
-    display: grid;
-    grid-template-rows: repeat(2, auto);
-}
-
 .firstRoadmap {
-    padding:0 40;
-    margin:20 0;
+    padding: 0 40;
+    margin: 20 0;
     display: flex;
     justify-content: space-between;
-
-
-
 }
 
 .firstRoadmap p {
@@ -490,13 +489,13 @@ button:hover{
     color: transparent;
     font-size: 206px;
     font-family: MainTitle;
-    padding:20 0 0 0;
-    margin:0 40 0 0;
+    padding: 20 0 0 0;
+    margin: 0 40 0 0;
 
 
 }
 
-#roadMapRed  {
+#roadMapRed {
     align-items: center;
 
 }
@@ -530,7 +529,7 @@ button:hover{
     background-color: #1B1C1E;
     border-radius: 20px;
     box-shadow: 5px 10px 20px rgba(241, 236, 236, 0.068);
-    
+
 
 }
 
@@ -571,28 +570,6 @@ button:hover{
 }
 
 
-/* Footer */
-footer {
-    padding-top: 100px;
-}
-
-.footerContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 10 30;
-}
-
-.footerContainer img {
-    width: 5%;
-}
-
-.footerContainer p {
-    font-family: 14px;
-    font-family: Descriptions;
-}
-
 /*Tokenomics*/
 
 
@@ -603,7 +580,7 @@ footer {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     padding: 30px;
-    
+
 }
 
 .tokenStats {
@@ -640,15 +617,16 @@ footer {
     align-items: center;
     justify-content: center;
 }
-    
+
+
 #token {
     font-size: 28px;
 }
 
 #supply {
-    color:#C3C3E1;
+    color: #C3C3E1;
     font-weight: 100;
-    margin:10 0;
+    margin: 10 0;
 }
 
 #tokenInfonContainer {
@@ -749,43 +727,71 @@ footer {
     background-color: #00a1e3;
 }
 
+
+/* Footer */
+footer {
+    padding-top: 100px;
+}
+
+.footerContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10 30;
+}
+
+.footerContainer img {
+    width: 5%;
+}
+
+.footerContainer p {
+    font-family: 14px;
+    font-family: Descriptions;
+}
+
+
+
+
 /*Scrollbar */
 
 ::-webkit-scrollbar {
     width: 12px;
     height: 12px;
-  }
-  ::-webkit-scrollbar-track {
+}
+
+::-webkit-scrollbar-track {
     border-radius: 10px;
     z-index: 99;
-    background-color:black;;
-  }
-  ::-webkit-scrollbar-thumb {
+    background-color: black;
+    ;
+}
+
+::-webkit-scrollbar-thumb {
     background-color: white;
-    background-image:-webkit-linear-gradient(45deg,rgba(255,255,255,.3) 20%,transparent 20%,transparent 40%,rgba(255, 255, 255, 0.3) 40%,rgba(255,255,255,.3) 60%,transparent 60%,transparent 80%,rgba(255, 255, 255, 0.3) 80%);
+    background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, .3) 20%, transparent 20%, transparent 40%, rgba(255, 255, 255, 0.3) 40%, rgba(255, 255, 255, .3) 60%, transparent 60%, transparent 80%, rgba(255, 255, 255, 0.3) 80%);
     border-radius: 10px;
-  }
-  
-  
+}
+
+
 
 /*RESPONSIVE */
 
 
 @media(max-width:1480px) {
 
-    .header.sticky  {
-        padding:20 120;
+    .header.sticky {
+        padding: 20 120;
     }
 
     .styledSection {
         padding: 40 100px;
-
     }
 
     /*Features */
 
-    .gridFeatures>div:hover, .gridFeatures>div:hover .dropdownDescription { 
-         height: 90%;
+    .gridFeatures>div:hover, .gridFeatures>div:hover .dropdownDescription {
+        height: 90%;
     }
 }
 
@@ -793,52 +799,80 @@ footer {
 
     /*Features*/
 
-    .gridFeatures>div:hover, .gridFeatures>div:hover .dropdownDescription { 
+    .gridFeatures>div:hover, .gridFeatures>div:hover .dropdownDescription {
         height: 95%;
-   }
+    }
 
-   /*Taxes*/
+    /*Taxes*/
 
-   .tax {
-       height: 90%;
-   }
+    .tax {
+        height: 90%;
+    }
 
 }
 
 
 @media(max-width:1280px) {
-    
+
     /*Nav*/
     .header {
         padding: 0 20 0 60;
     }
-    
+
+    .header.sticky {
+        padding: 10 20 0 60;
+    }
 
     /*Hero Section*/
-    #Home{
+    #Home {
         padding: 140 0 0 60;
     }
 
     /*Sections*/
 
     .styledSection {
-        padding:40;
+        padding: 40;
     }
 
     /* Marketplace */
     .platform {
         padding: 0 30;
     }
-    .platformContent{ 
-        width: 100%;
+
+    .platformContent {
+        width: 90%;
     }
 
     .platformContent p {
         width: 100%;
         font-size: 14px;
-        padding:0;
+        padding: 0;
     }
 
+    /*Roadmap*/
+    .firstRoadmap p {
+        font-size: 16px;
+    }
+
+    /* Tax */
+
+    .taxContainer {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .tax {
+        max-width: 100% !important;
+
+    }
+
+
+    .taxPercentage>p::before {
+        width: 10%;
+    }
 
 }
 
@@ -846,11 +880,297 @@ footer {
     .socialLinkAndButton, .navbar {
         display: none;
     }
+
+    #toggleMenu {
+        transition: .5s;
+        display: block;
+        font-size: 32px;
+        cursor: pointer;
+    }
+
 }
 
 
 
 @media(max-width:1150px) {
+    /*Sections*/
 
+    .sectionTitle {
+        font-size: 30px;
+    }
+
+    /*Home */
+
+    .contentContainer h1 {
+        font-size: 36px;
+    }
+
+
+    .contentContainer p {
+        font-size: 16px;
+    }
+
+
+
+    /*Features*/
+
+    .gridFeatures div h2 {
+        font-size: 16px;
+    }
+
+    .gridFeatures div p {
+        font-size: 15px;
+    }
+
+    /*Tokenomics*/
+
+    .tokenomicsContainer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tokenTitle {
+        font-size: 15px;
+    }
+
+    .tokenNumber {
+        font-size: 34px;
+    }
+
+    .tokenStats {
+        flex: 1 1 30%;
+    }
+
+    #monthsContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    #monthsContainer h1 {
+        font-size: 34px;
+    }
+
+    #monthsContainer p {
+        font-size: 20px;
+    }
+}
+
+
+@media(max-width:1000px) {
+
+    /*Sections*/
+
+    .styledSection {
+        padding: 40 20px;
+    }
+
+
+    /*Home*/
+
+    #Home {
+        padding: 140 0 70 0;
+    }
+
+    .allContent {
+        padding: 0 40;
+    }
+
+    .contentContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .contentContainer h1 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .heroImage {
+        display: none;
+    }
+
+
+    /* Marketplace */
+
+    .platform {
+        gap: 50px;
+    }
+
+    .platformImage {
+        width: 100%;
+    }
+
+    .platformImage img {
+        width: 100%;
+    }
+
+    .platformContent {
+        width: 50%;
+    }
+
+    .platformContent p {
+        font-size: 12px;
+    }
+}
+
+@media(max-width:900px) {
+
+    /*Marketplace*/
+    .platform {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .platformContent {
+        padding: 0 10px;
+        width: 100%;
+    }
+
+    .platformContent p {
+        font-size: 16px;
+    }
+
+
+
+    /* Features */
+
+    .gridFeatures {
+        flex-direction: column;
+        height: 450px;
+    }
+
+    .portfolio, .giveaways, .deals {
+        height: 100px;
+    }
+
+    /*Roadmap*/
+
+    .firstRoadmap {
+        gap: 50px;
+    }
+
+    .firstRoadmap p {
+        width: 50%;
+        font-size: 14px;
+    }
+
+    .Phase {
+        width: 50%;
+    }
+
+    .firstRoadmap h2 {
+        font-size: 146px;
+
+    }
+
+}
+
+
+@media(max-width:800px) {
+
+    /*Home*/
+    #Home {
+        text-align: center;
+    }
+
+    /*Roadmap*/
+    .firstRoadmap {
+        padding: 0 40;
+        margin: 10 0 80 0;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+    }
+
+    .firstRoadmap p {
+        width: 100%;
+    }
+
+    #roadMapRed {
+        flex-direction: column-reverse;
+    }
+
+    .Phase {
+        width: 100%;
+    }
+
+    /* Tax*/
+
+    .taxContainer {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+    }
+}
+
+
+@media(max-width:500px) {
+
+    .styledSection {
+        padding:40 0;
+        
+    }
+
+    .header {
+        padding: 0 20;
+    }
+
+    .header.sticky {
+        padding:10 20;
+    }
+
+    .allContent {
+        width: 100%;
+        padding: 0;
+    }
+
+    .contentContainer {
+        width: 100%;
+    }
+    .contentContainer h1 {
+        font-size: 45px;
+        width: 100%;
+    }
+
+    .homeButtons {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+@media(max-width:360px) {
+
+    .header {
+        padding:0;
+    }
+
+    .header.sticky {
+        padding: 0;
+    }
+    .sectionTitle {
+        font-size: 25px;
+    }
+
+    .contentContainer h1 {
+        font-size: 35px;
+    }
+
+    .homeButtons button {
+        padding:5 30;
+    }
+
+    #chart {
+        width: 100% !important;
+        background-color: transparent;
+    }
     
+    .firstRoadmap h2 {
+        font-size: 100px;
+    }
+
 }

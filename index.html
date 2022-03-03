@@ -61,8 +61,9 @@
                 </ul>
             </div>
             <button>Dashboard</button>
-        </div>
 
+        </div>
+        <i id="toggleMenu" class="fa-solid fa-bars"></i>        
     </header>
 
 
@@ -101,7 +102,7 @@
                 <h1 class="sectionTitle">Upcoming Marketplace</h1>
 
 
-                <div class="platform">
+                <div class="platform" id="spectrumMarketplace">
                     <div class="platformImage">
                         <img src="./assets/marketplaceImages/Website1.png" alt="">
                     </div>
@@ -233,6 +234,18 @@
                     <h1 class="tokenNumber">6 Months</h1>
                     <p class="tokenTitle">Locked for team & early <br> backers + 6 months vesting</p>
                 </div>
+                <div id="chart" class="tokenStats">
+                    <div>
+                        <canvas id="tokenChart" height="300" width="300">
+
+                        </canvas>
+
+                    </div>
+                    <div id="tokenInfonContainer">
+                        <p id="token">1B</p>
+                        <p id="supply">Total Supply</p>
+                    </div>
+                </div>
 
                 <div id="artistFund" class="tokenStats">
                     <h1 class="tokenNumber">5%</h1>
@@ -249,18 +262,7 @@
                     <p class="tokenTitle">Treasury</p>
                 </div>
 
-                <div id="chart" class="tokenStats">
-                    <div>
-                        <canvas id="tokenChart" height="300" width="300">
 
-                        </canvas>
-
-                    </div>
-                    <div id="tokenInfonContainer">
-                        <p id="token">1B</p>
-                        <p id="supply">Total Supply</p>
-                    </div>
-                </div>
 
                 <div id="advisors" class="tokenStats">
                     <h1 class="tokenNumber">5%</h1>
@@ -300,8 +302,10 @@
 
         <!--RoadMap-->
         <section class="styledSection" id="roadmap">
+
+          
             <div class="roadMapContainer">
-                <h1 class="sectionTitle">Roadmap</h1>
+                <h1 class="sectionTitle">Roadmap</h1>  
 
                 <div class="firstRoadmap">
                     <p> While Spectrum is in early stages, we're convinced in the project's ability to grow organically

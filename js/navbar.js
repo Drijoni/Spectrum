@@ -3,3 +3,9 @@ window.addEventListener('scroll',function() {
     header.classList.toggle("sticky",window.scrollY > 0);
     })
         
+
+const toggleBtn = document.getElementById('toggle');
+
+const toggleMenu =() => {
+    
+}
