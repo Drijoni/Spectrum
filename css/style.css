@@ -48,7 +48,7 @@ body {
 
 /* Sections and titles with descriptions */
 .styledSection {
-    padding: 80 140 0 140;
+    padding: 120 140 0 140;
 }
 
 
@@ -785,7 +785,7 @@ footer {
     }
 
     .styledSection {
-        padding: 40 100px;
+        padding: 120 100 0 100;
     }
 
     /*Features */
@@ -1143,7 +1143,7 @@ footer {
     }
 }
 
-@media(max-width:360px) {
+@media(max-width:400px) {
 
     .header {
         padding:0;
