@@ -6,6 +6,6 @@ window.addEventListener('scroll',function() {
 
 const toggleBtn = document.getElementById('toggle');
 
-const toggleMenu =() => {
+const toggleMenu = () => {
     
 }

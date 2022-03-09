@@ -44,11 +44,13 @@
 
 body {
     background-color: #0a0214;
+    user-select: none;
 }
 
 /* Sections and titles with descriptions */
 .styledSection {
-    padding: 120 140 0 140;
+    padding: 80 140 0 140;
+    scroll-behavior: smooth;
 }
 
 
@@ -193,7 +195,7 @@ button:hover {
     background-color: rgb(0, 0, 0);
     position: fixed;
     transition: .5s;
-    padding: 20 140;
+
 }
 
 
@@ -312,7 +314,9 @@ button:hover {
     width: 100%;
     height: 50%;
     background-color: #131313;
+    /*
     box-shadow: 0 3px 6px 0 rgb(0 0 0 / 25%);
+    */
     padding: 20 30;
     border-radius: 10px;
     font-family: MiddleWide;
@@ -326,6 +330,7 @@ button:hover {
     font-size: 18px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .gridFeatures div h2::after {
@@ -364,7 +369,6 @@ button:hover {
 
 /* Marketplace platform */
 
-
 .platform {
     padding: 10 30px;
     display: flex;
@@ -374,8 +378,8 @@ button:hover {
 }
 
 .platformImage img {
-    width: 90%;
-    box-shadow: 5px 10px 25px rgba(255, 253, 253, 0.096);
+    width: 90%;/*
+    box-shadow: 5px 10px 25px rgba(255, 253, 253, 0.096);*/
     border-radius: 20px;
 }
 
@@ -408,8 +412,8 @@ button:hover {
     height: 190px;
     background-color: #1B1C1E;
     border-radius: 20px;
-    max-width: 300px;
-    box-shadow: 15px 10px 20px rgba(95, 91, 91, 0.144);
+    max-width: 300px;/*
+    box-shadow: 15px 10px 20px rgba(95, 91, 91, 0.144);*/
 }
 
 .taxDescription p {
@@ -462,7 +466,7 @@ button:hover {
 
 .firstRoadmap {
     padding: 0 40;
-    margin: 20 0;
+    margin: 30 0;
     display: flex;
     justify-content: space-between;
 }
@@ -527,8 +531,8 @@ button:hover {
     align-items: center;
     justify-content: center;
     background-color: #1B1C1E;
-    border-radius: 20px;
-    box-shadow: 5px 10px 20px rgba(241, 236, 236, 0.068);
+    border-radius: 20px;/*
+    box-shadow: 5px 10px 20px rgba(241, 236, 236, 0.068);*/
 
 
 }
@@ -572,7 +576,6 @@ button:hover {
 
 /*Tokenomics*/
 
-
 .tokenomicsContainer {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -580,7 +583,6 @@ button:hover {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     padding: 30px;
-
 }
 
 .tokenStats {
@@ -780,12 +782,19 @@ footer {
 
 @media(max-width:1480px) {
 
-    .header.sticky {
-        padding: 20 120;
+    /*Nav*/
+    .header {
+        padding: 0 80;
     }
 
+    /*Hero Section*/
+    #Home {
+        padding: 140 0 0 80;
+    }
+
+    /*SectionsF*/
     .styledSection {
-        padding: 120 100 0 100;
+        padding: 20 100 0 60;
     }
 
     /*Features */
@@ -819,9 +828,6 @@ footer {
         padding: 0 20 0 60;
     }
 
-    .header.sticky {
-        padding: 10 20 0 60;
-    }
 
     /*Hero Section*/
     #Home {
@@ -861,12 +867,10 @@ footer {
         grid-template-columns: repeat(2, auto);
         align-items: center;
         justify-content: space-between;
-
     }
 
     .tax {
         max-width: 100% !important;
-
     }
 
 
@@ -1083,7 +1087,7 @@ footer {
         margin: 10 0 80 0;
         display: flex;
         flex-direction: column;
-        align-items:center;
+        align-items: center;
         justify-content: center;
     }
 
@@ -1111,16 +1115,12 @@ footer {
 @media(max-width:500px) {
 
     .styledSection {
-        padding:40 0;
-        
+        padding: 40 0;
+
     }
 
     .header {
         padding: 0 20;
-    }
-
-    .header.sticky {
-        padding:10 20;
     }
 
     .allContent {
@@ -1131,6 +1131,7 @@ footer {
     .contentContainer {
         width: 100%;
     }
+
     .contentContainer h1 {
         font-size: 45px;
         width: 100%;
@@ -1146,12 +1147,13 @@ footer {
 @media(max-width:400px) {
 
     .header {
-        padding:0;
+        padding: 0;
     }
 
     .header.sticky {
         padding: 0;
     }
+
     .sectionTitle {
         font-size: 25px;
     }
@@ -1161,14 +1163,14 @@ footer {
     }
 
     .homeButtons button {
-        padding:5 30;
+        padding: 5 30;
     }
 
     #chart {
         width: 100% !important;
         background-color: transparent;
     }
-    
+
     .firstRoadmap h2 {
         font-size: 100px;
     }

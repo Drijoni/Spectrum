@@ -13,17 +13,16 @@
 
     <!--Chart.js-->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
-    <!--Jquery-->
     <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.js"></script>
-
 
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
         integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <title>Spectrum</title>
 </head>
@@ -32,7 +31,6 @@
 
 
     <header class="header" id="header">
-
         <div class="logoAndNav">
             <div class="logoContainer">
                 <a href="#">
@@ -46,9 +44,7 @@
                     <li><a href="#tokenomics">Tokenomics </a></li>
                     <li><a href="#roadmap">Roadmap </a></li>
                 </ul>
-
             </nav>
-
         </div>
 
         <div class="socialLinkAndButton">
@@ -63,9 +59,8 @@
             <button>Dashboard</button>
 
         </div>
-        <i id="toggleMenu" class="fa-solid fa-bars"></i>        
+        <i id="toggleMenu" class="fa-solid fa-bars"></i>
     </header>
-
 
     <div class="mainContainer">
 
@@ -95,10 +90,10 @@
         </section>
 
         <!--Upcoming Marketplace-->
-        <section class="styledSection" id="marketplace">
+        <section class="styledSection" id="marketplace" data-aos="fade-right">
 
 
-            <div class="platformContainer">
+            <div class="platformContainer" data-aos="fade-right">
                 <h1 class="sectionTitle">Upcoming Marketplace</h1>
 
 
@@ -109,8 +104,10 @@
 
                     <div class="platformContent">
 
-                        <p>Spectrum’s Portal is the epicenter of the Spectrum ecosystem. Users will be able to perform
-                            multiple functions through it. Spectrum marketplace will give you the opportunity to create,
+                        <p>Spectrum’s Portal is the epicenter of the Spectrum ecosystem. Users will be able to
+                            perform
+                            multiple functions through it. Spectrum marketplace will give you the opportunity to
+                            create,
                             buy, swap, sell your art and share it with the community. We are making NFTs more
                             approachable and accessible. You will find the newest and hottest NFT trends in our
                             marketplace. NFTs from famous high-profile trendsetters all in one place.
@@ -126,10 +123,10 @@
         </section>
 
         <!--Features-->
-        <section class="styledSection" id="features">
+        <section class="styledSection" data-aos="fade-in">
 
             <div class="featuresContainer">
-                <h1 class="sectionTitle" >Features</h1>
+                <h1 class="sectionTitle">Features</h1>
                 <div class="gridFeatures">
 
                     <div class="portfolio">
@@ -168,7 +165,7 @@
         </section>
 
         <!-- Artists Fund-->
-        <section class="styledSection">
+        <section class="styledSection" data-aos="fade-right">
 
 
             <div class="platformContainer">
@@ -198,7 +195,7 @@
         </section>
 
         <!--Join the Artists-->
-        <section class="styledSection">
+        <section class="styledSection" id="features" data-aos="fade-right">
 
 
             <div class="platformContainer">
@@ -226,7 +223,7 @@
         </section>
 
         <!--Tokenomics-->
-        <section class="styledSection" id="tokenomics">
+        <section class="styledSection" id="tokenomics" data-aos="fade-up">
             <h1 class="sectionTitle"> Tokenomics</h1>
             <div class="tokenomicsContainer">
 
@@ -299,13 +296,12 @@
             </div>
         </section>
 
-
         <!--RoadMap-->
-        <section class="styledSection" id="roadmap">
+        <section class="styledSection" id="roadmap" data-aos="fade-in">
 
-          
+
             <div class="roadMapContainer">
-                <h1 class="sectionTitle">Roadmap</h1>  
+                <h1 class="sectionTitle">Roadmap</h1>
 
                 <div class="firstRoadmap">
                     <p> While Spectrum is in early stages, we're convinced in the project's ability to grow organically
@@ -410,7 +406,6 @@
             </div>
         </section>
 
-
         <!--Tax Dist...-->
         <section class="styledSection" id="taxDistribution">
             <div class="sectionTitleContainer">
@@ -421,7 +416,7 @@
             <div class="taxContainer">
 
 
-                <div class="tax">
+                <div class="tax" data-aos="flip-left" data-aos-duration="1000">
                     <div class="taxPercentage">
                         <p class="percentageDef">3%</p>
                     </div>
@@ -433,7 +428,7 @@
                     </div>
                 </div>
 
-                <div class="tax">
+                <div class="tax" data-aos="flip-left" data-aos-duration="1000">
                     <div class="taxPercentage">
                         <p class="percentageBlue">2%</p>
                     </div>
@@ -445,7 +440,7 @@
                     </div>
                 </div>
 
-                <div class="tax">
+                <div class="tax" data-aos="flip-right" data-aos-duration="1000">
                     <div class="taxPercentage">
                         <p class="percentageOrange">2%</p>
                     </div>
@@ -459,7 +454,7 @@
                 </div>
 
 
-                <div class="tax">
+                <div class="tax" data-aos="flip-right" data-aos-duration="1000">
                     <div class="taxPercentage">
                         <p class="percentageLightRed">3%</p>
                     </div>
@@ -474,17 +469,17 @@
 
             </div>
         </section>
-
-
     </div>
-    <!--Footer-->
-    <footer>
-        <div class="footerContainer">
-            <img src="/assets/images/spectrum.png" alt="">
-            <p>&copy Spectrum - 2022</p>
-        </div>
-    </footer>
 
+        <!--Footer-->
+        <footer>
+            <div class="footerContainer">
+                <img src="/assets/images/spectrum.png" alt="">
+                <p>&copy Spectrum - 2022</p>
+            </div>
+        </footer>
+
+    <script>AOS.init(); </script>
     <script src="js/chart.js"></script>
     <script src="js/navbar.js"></script>
 </body>
