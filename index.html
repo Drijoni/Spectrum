@@ -59,8 +59,29 @@
             <button>Dashboard</button>
 
         </div>
-        <i id="toggleMenu" class="fa-solid fa-bars"></i>
+        <div id="toggleMenu"><i class="fa-solid fa-bars"></i></div>
+
+        <!--Sidenav-->
+        <div id="mySidenav" class="sidenav">
+            <div>
+                <a href="#marketplace">Marketplace </a>
+                <a href="#features">Features </a>
+                <a href="#tokenomics">Tokenomics </a>
+                <a href="#roadmap">Roadmap </a>
+            <button id="mobilebtn">Dashboard</button>
+        </div>
+            <div>
+            <ul class="mobileIcons">
+                <li><a id="twitter" href=""><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a id="telegram" href=""><i class="fa-brands fa-telegram"></i></a> </li>
+                <li><a id="medium" href=""><i class="fa-brands fa-medium"></i></a> </li>
+                <li><a id="discord" href=""><i class="fa-brands fa-discord"></i></a></li>
+            </ul>
+        </div>
+          </div>
     </header>
+
+    
 
     <div class="mainContainer">
 
@@ -123,7 +144,7 @@
         </section>
 
         <!--Features-->
-        <section class="styledSection" data-aos="fade-in">
+        <section class="styledSection" id="features"  data-aos="fade-in">
 
             <div class="featuresContainer">
                 <h1 class="sectionTitle">Features</h1>
@@ -195,7 +216,7 @@
         </section>
 
         <!--Join the Artists-->
-        <section class="styledSection" id="features" data-aos="fade-right">
+        <section class="styledSection"  data-aos="fade-right">
 
 
             <div class="platformContainer">
@@ -471,17 +492,18 @@
         </section>
     </div>
 
-        <!--Footer-->
-        <footer>
-            <div class="footerContainer">
-                <img src="/assets/images/spectrum.png" alt="">
-                <p>&copy Spectrum - 2022</p>
-            </div>
-        </footer>
+    <!--Footer-->
+    <footer>
+        <div class="footerContainer">
+            <img src="/assets/images/spectrum.png" alt="">
+            <p>&copy Spectrum - 2022</p>
+        </div>
+    </footer>
 
     <script>AOS.init(); </script>
     <script src="js/chart.js"></script>
     <script src="js/navbar.js"></script>
+
 </body>
 
 </html>
