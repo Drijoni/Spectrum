@@ -59,6 +59,7 @@ body {
 .styledSection {
     padding: 80 140 0 140;
     scroll-behavior: smooth;
+
 }
 
 
@@ -244,6 +245,7 @@ button:hover {
     flex-direction: column;
     align-items: center;
 
+
 }
 
 #mobilebtn {
@@ -252,14 +254,14 @@ button:hover {
     border:1px solid #9e7df4;
     border-radius: 10px;
     font-family: Descriptions;
-
 }
 
 .mobileIcons {
-    display: grid;
-    grid-template-columns: repeat(2,auto);
+    display: flex;
+    flex-wrap:wrap;
     list-style: none;
-    
+    justify-content: center;
+    align-items: center;
 }
 .mobileIcons i {
     color: white;
@@ -342,13 +344,16 @@ button:hover {
     font-weight: bold;
     font-family: MenuShapiro;
     font-size: 16px;
-    color: black;
     outline: none;
     border-radius: 20px;
     margin: 10;
     cursor: pointer;
 }
 
+.homeButtons button a {
+    text-decoration: none;
+    color: black;
+}
 
 .heroImage {
     width: 50%;
@@ -887,7 +892,7 @@ footer {
 }
 
 
-@media(max-width:1280px) {
+@media(max-width:1300px) {
 
     /*Nav*/
     .header {
@@ -903,10 +908,12 @@ footer {
     /*Sections*/
 
     .styledSection {
-        padding: 90 40 20 40;
+        padding: 30 0 30 0;
+        scroll-margin-top: 60px;
     }
 
     /* Marketplace */
+
     .platform {
         padding: 0 30;
     }
