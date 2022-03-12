@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--Icon-->
-    <link rel="icon" href="assets/images/spectrumPurple.png">
+    <link rel="icon" href="assets/images/00.png">
 
     <!--Stylesheet-->
     <link rel="stylesheet" href="css/style.css">
@@ -34,7 +34,7 @@
         <div class="logoAndNav">
             <div class="logoContainer">
                 <a href="#">
-                    <img src="assets/images/spectrum.png" alt="">
+                    <img src="assets/images/00.png" alt="">
                 </a>
             </div>
             <nav class="navbar">
@@ -59,7 +59,10 @@
             <button>Dashboard</button>
 
         </div>
-        <div id="toggleMenu"><i class="fa-solid fa-bars"></i></div>
+        <div id="toggleMenu"><i id="open" class="fa-solid fa-bars">
+        </i>
+        <i id="close" class="fa-solid fa-xmark"></i>
+            
 
         <!--Sidenav-->
         <div id="mySidenav" class="sidenav">
@@ -68,8 +71,9 @@
                 <a href="#features">Features </a>
                 <a href="#tokenomics">Tokenomics </a>
                 <a href="#roadmap">Roadmap </a>
-            <button id="mobilebtn">Dashboard</button>
+
         </div>
+        <button id="mobilebtn">Dashboard</button>
             <div>
             <ul class="mobileIcons">
                 <li><a id="twitter" href=""><i class="fa-brands fa-twitter"></i></a></li>
@@ -84,6 +88,7 @@
     
 
     <div class="mainContainer">
+
 
         <!--Home-->
         <section class="styledSection" id="Home">
@@ -109,10 +114,10 @@
 
 
         </section>
-
+        <img src="assets/images/splash1.png" id="backgroundImage">
         <!--Upcoming Marketplace-->
         <section class="styledSection" id="marketplace" data-aos="fade-right">
-
+  
 
             <div class="platformContainer" data-aos="fade-right">
                 <h1 class="sectionTitle">Upcoming Marketplace</h1>
@@ -144,7 +149,7 @@
         </section>
 
         <!--Features-->
-        <section class="styledSection" id="features"  data-aos="fade-in">
+        <section class="styledSection" id="features"  data-aos="fade-down">
 
             <div class="featuresContainer">
                 <h1 class="sectionTitle">Features</h1>
@@ -244,13 +249,13 @@
         </section>
 
         <!--Tokenomics-->
-        <section class="styledSection" id="tokenomics" data-aos="fade-up">
+        <section class="styledSection" id="tokenomics" data-aos="fade-down">
             <h1 class="sectionTitle"> Tokenomics</h1>
             <div class="tokenomicsContainer">
 
                 <div id="monthsContainer" class="tokenStats">
-                    <h1 class="tokenNumber">6 Months</h1>
-                    <p class="tokenTitle">Locked for team & early <br> backers + 6 months vesting</p>
+                    <h1 class="tokenNumber">3 Months</h1>
+                    <p class="tokenTitle">Locked for team & early <br> backers + 3 months vesting</p>
                 </div>
                 <div id="chart" class="tokenStats">
                     <div>
@@ -271,7 +276,7 @@
                 </div>
 
                 <div id="earlyBackers" class="tokenStats">
-                    <h1 class="tokenNumber">15%</h1>
+                    <h1 class="tokenNumber">20%</h1>
                     <p class="tokenTitle">Early backers</p>
                 </div>
 
@@ -289,12 +294,12 @@
 
                 <div id="rewards" class="tokenStats">
                     <h1 class="tokenNumber">16%</h1>
-                    <p class="tokenTitle">Rewards</p>
+                    <p class="tokenTitle">Rewards (staking)</p>
                 </div>
 
                 <div id="balancerLBP" class="tokenStats">
-                    <h1 class="tokenNumber">5%</h1>
-                    <p class="tokenTitle">Balancer LBP</p>
+                    <h1 class="tokenNumber">4%</h1>
+                    <p class="tokenTitle">Ecosystem</p>
                 </div>
 
                 <div id="initialLiquidity" class="tokenStats">
@@ -303,14 +308,14 @@
                 </div>
 
                 <div id="team" class="tokenStats">
-                    <h1 class="tokenNumber">9%</h1>
+                    <h1 class="tokenNumber">10%</h1>
                     <p class="tokenTitle">Team</p>
 
                 </div>
 
                 <div id="airdrop" class="tokenStats">
-                    <h1 class="tokenNumber">7%</h1>
-                    <p class="tokenTitle">AirDrops, Partners & Ecosystem</p>
+                    <h1 class="tokenNumber">5%</h1>
+                    <p class="tokenTitle">AirDrops, Partners </p>
 
                 </div>
 
@@ -344,21 +349,21 @@
                             <li>Team Expansion
                             </li>
 
-                            <li>V1 of website
-                            </li>
-
                             <li>Social Media launch
                             </li>
 
-                            <li>Pre-seed
-
+                            <li>Brand identity design
                             </li>
 
-                            <li>Kickstart marketing campaign
+                            <li>Presale
+
+                            </li>
+                            <li>V1 of website
                             </li>
 
-                            <li>Seed & Launch
+                            <li>Launch
                             </li>
+                            <li>Kickstart marketing campaign</li>
                         </ul>
                     </div>
 
@@ -382,16 +387,14 @@
 
                             </li>
 
-                            <li>Open applications to NFT artists
+                            <li>Marketplace
+                            </li>
 
+                            <li>Exchanges listing
 
                             </li>
 
-                            <li>CoinMarketCap and CoinGecko listing
-
-                            </li>
-
-                            <li>Second marketing campaign
+                            <li>Guerilla marketing campaign
 
                             </li>
                         </ul>
@@ -414,9 +417,6 @@
 
                             </li>
 
-                            <li>V1 of website
-                            </li>
-
                             <li>V1 NFT Launchpad
                             </li>
                         </ul>
@@ -437,7 +437,7 @@
             <div class="taxContainer">
 
 
-                <div class="tax" data-aos="flip-left" data-aos-duration="1000">
+                <div class="tax" data-aos="fade-in" data-aos-duration="1000">
                     <div class="taxPercentage">
                         <p class="percentageDef">3%</p>
                     </div>
@@ -449,7 +449,7 @@
                     </div>
                 </div>
 
-                <div class="tax" data-aos="flip-left" data-aos-duration="1000">
+                <div class="tax" data-aos="fade-in" data-aos-duration="1000">
                     <div class="taxPercentage">
                         <p class="percentageBlue">2%</p>
                     </div>
@@ -461,7 +461,7 @@
                     </div>
                 </div>
 
-                <div class="tax" data-aos="flip-right" data-aos-duration="1000">
+                <div class="tax" data-aos="fade-in" data-aos-duration="1000">
                     <div class="taxPercentage">
                         <p class="percentageOrange">2%</p>
                     </div>
@@ -475,7 +475,7 @@
                 </div>
 
 
-                <div class="tax" data-aos="flip-right" data-aos-duration="1000">
+                <div class="tax" data-aos="fade-in" data-aos-duration="1000">
                     <div class="taxPercentage">
                         <p class="percentageLightRed">3%</p>
                     </div>
@@ -495,7 +495,7 @@
     <!--Footer-->
     <footer>
         <div class="footerContainer">
-            <img src="/assets/images/spectrum.png" alt="">
+            <img src="/assets/images/00.png" alt="">
             <p>&copy Spectrum - 2022</p>
         </div>
     </footer>

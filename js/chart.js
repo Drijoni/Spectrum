@@ -5,14 +5,14 @@ var data = {
     "Treasury",
     'Advisors',
     'Rewards',
-    'Balancer LBP',
+    'Ecosystem',
     'Initial Liquidity',
     'Team',
-    'AirDrops, Parters & Ecosystem'
+    'AirDrops, Parters'
   ],
   datasets: [{
     label: 'My First Dataset',
-    data: [5, 15, 15,5,16,5,20,9,7],
+    data: [5, 20, 15,5,16,4,20,10,5],
     backgroundColor: [
       '#c53ba9',
       '#0072c5',

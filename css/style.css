@@ -47,11 +47,20 @@ body {
     user-select: none;
 }
 
+#backgroundImage {
+    position: fixed;
+    width: 110%;
+    top: 100px;
+    left: 10px;
+    z-index: -99;
+}
+
 /* Sections and titles with descriptions */
 .styledSection {
     padding: 80 140 0 140;
     scroll-behavior: smooth;
 }
+
 
 
 .sectionTitleContainer p {
@@ -81,6 +90,11 @@ body {
     transition: .5s;
     align-items: center;
     justify-content: space-between;
+}
+
+#close {
+    transition: .5s;
+    display: none;
 }
 
 
@@ -118,7 +132,8 @@ body {
     text-decoration: none;
 }
 
-.logoContainer a img {
+.logoContainer a img ,.footerContainer img  {
+    padding: 25px;
     width: 80px;
 }
 
@@ -164,7 +179,7 @@ body {
     color: #5865F2;
 }
 
-.socialLinkAndButton button, #mobilebtn {
+.socialLinkAndButton button {
     padding: 10 40px;
     background: linear-gradient(90deg, rgba(98, 248, 187, 1) 31%, rgba(105, 251, 233, 1) 79%);
     font-weight: bold;
@@ -204,40 +219,64 @@ button:hover {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: white;
+    background-color: #4619A2;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 40px;
+    padding: 80px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: left;
+    justify-content: space-between; 
 }
 
 .sidenav a {
-    padding: 15px;
+    padding: 25px;
     text-decoration: none;
-    font-size: 25px;
-    color: black;
+    font-size: 20px;
+    color: white;
     display: block;
     transition: 0.3s;
     font-family: MenuShapiro;
 }
 
-#mobilebtn {
-    margin:40 0;
+.sidenav div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
 }
 
-.mobileIcons i {
-    color: black;
-    font-size: 40px;
+#mobilebtn {
+    padding:15 40px;
+    background-color: transparent;
+    border:1px solid #9e7df4;
+    border-radius: 10px;
+    font-family: Descriptions;
+
 }
+
+.mobileIcons {
+    display: grid;
+    grid-template-columns: repeat(2,auto);
+    list-style: none;
+    
+}
+.mobileIcons i {
+    color: white;
+    font-size: 35px;
+}
+
 
 /* First Section */
 
 #Home {
-    padding: 140 0 0 140;
+    padding: 140 0 140 140;
+    z-index: 99;
+    background-color: #0a0214;
+    box-shadow: 0 44px 60px #0a0214;
+    height: 100%;
 }
+
 
 .allContent {
     display: flex;
@@ -505,6 +544,8 @@ button:hover {
     margin: 30 0;
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+
 }
 
 .firstRoadmap p {
@@ -517,11 +558,6 @@ button:hover {
 
 }
 
-#roadMapBlue {
-    display: flex;
-    align-items: center;
-
-}
 
 
 .firstRoadmap h2 {
@@ -531,21 +567,14 @@ button:hover {
     font-family: MainTitle;
     padding: 20 0 0 0;
     margin: 0 40 0 0;
-
-
 }
 
 #roadMapRed {
     align-items: center;
-
 }
 
 #roadMapRed h2 {
     background: linear-gradient(90deg, rgba(254, 94, 0, 1), rgba(246, 69, 98, 1), rgba(194, 45, 225, 1), rgba(246, 69, 98, 1), rgba(254, 94, 0, 1));
-}
-
-#roadMapBlue {
-    padding: 40 40;
 }
 
 #roadMapBlue h2 {
@@ -780,9 +809,6 @@ footer {
     padding: 10 30;
 }
 
-.footerContainer img {
-    width: 5%;
-}
 
 .footerContainer p {
     font-family: 14px;
@@ -795,15 +821,14 @@ footer {
 /*Scrollbar */
 
 ::-webkit-scrollbar {
-    width: 12px;
-    height: 12px;
+    width: 6px;
 }
 
 ::-webkit-scrollbar-track {
     border-radius: 10px;
     z-index: 99;
     background-color: black;
-    ;
+
 }
 
 ::-webkit-scrollbar-thumb {
@@ -816,7 +841,6 @@ footer {
 
 /*RESPONSIVE */
 
-
 @media(max-width:1480px) {
 
     /*Nav*/
@@ -826,12 +850,12 @@ footer {
 
     /*Hero Section*/
     #Home {
-        padding: 140 0 0 80;
+        padding: 140 0 150 80;
     }
 
     /*SectionsF*/
     .styledSection {
-        padding: 60 100 60 60; 
+        padding: 60 100 40 60;
     }
 
     /*Features */
@@ -855,6 +879,11 @@ footer {
         height: 90%;
     }
 
+    /*Hero Section*/
+    #Home {
+        padding: 140 0 140 80;
+    }
+
 }
 
 
@@ -862,19 +891,19 @@ footer {
 
     /*Nav*/
     .header {
-        padding: 0 20 0 60;
+        padding: 20 20 0 60;
     }
 
 
     /*Hero Section*/
     #Home {
-        padding: 140 0 0 60;
+        padding: 180 0 340 60;
     }
 
     /*Sections*/
 
     .styledSection {
-        padding: 40;
+        padding: 90 40 20 40;
     }
 
     /* Marketplace */
@@ -904,6 +933,7 @@ footer {
         grid-template-columns: repeat(2, auto);
         align-items: center;
         justify-content: space-between;
+
     }
 
     .tax {
@@ -928,8 +958,8 @@ footer {
         font-size: 32px;
         cursor: pointer;
     }
-
 }
+
 
 
 
@@ -995,22 +1025,32 @@ footer {
     #monthsContainer p {
         font-size: 20px;
     }
+
+    #backgroundImage {
+
+    }
 }
 
 
-@media(max-width:1000px) {
+@media(max-width:1024px) {
 
+
+    .header {
+        top:0;
+    }
     /*Sections*/
 
     .styledSection {
-        padding: 40 20px;
+        padding: 80 20px 20 20;
     }
 
 
     /*Home*/
 
     #Home {
-        padding: 140 0 70 0;
+        padding: 140 0 140 0;
+        height: 90%;
+        margin-top: 10%;
     }
 
     .allContent {
@@ -1152,8 +1192,7 @@ footer {
 @media(max-width:500px) {
 
     .styledSection {
-        padding: 40 0;
-
+        padding: 60 0 20 0;
     }
 
     .header {
@@ -1179,17 +1218,10 @@ footer {
         flex-direction: row;
         justify-content: space-between;
     }
+
 }
 
 @media(max-width:400px) {
-
-    .header {
-        padding: 0;
-    }
-
-    .header.sticky {
-        padding: 0;
-    }
 
     .sectionTitle {
         font-size: 25px;
@@ -1200,7 +1232,7 @@ footer {
     }
 
     .homeButtons button {
-        padding: 5 30;
+        padding: 15 40;
     }
 
     #chart {
@@ -1210,6 +1242,10 @@ footer {
 
     .firstRoadmap h2 {
         font-size: 100px;
+    }
+
+    .homeButtons {
+        flex-direction: column;
     }
 
 }
