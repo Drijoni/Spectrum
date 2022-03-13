@@ -48,3 +48,8 @@ toggleBtn.onclick = () => {
     flagMenu();
 
 }
+
+
+const alertDiscord = () => {
+    alert("Comming soon!");
+}
