@@ -869,6 +869,25 @@ footer {
     .gridFeatures>div:hover, .gridFeatures>div:hover .dropdownDescription {
         height: 90%;
     }
+
+        /* Tax */
+
+        .taxContainer {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            align-items: center;
+            justify-content: space-between;
+    
+        }
+    
+        .tax {
+            max-width: 100% !important;
+        }
+    
+    
+        .taxPercentage>p::before {
+            width: 10%;
+        }
 }
 
 @media(max-width:1400px) {
@@ -880,29 +899,13 @@ footer {
     }
 
 
-    /* Tax */
-
-    .taxContainer {
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        align-items: center;
-        justify-content: space-between;
-
-    }
-
-    .tax {
-        max-width: 100% !important;
-    }
-
-
-    .taxPercentage>p::before {
-        width: 10%;
-    }
-
-
     /*Hero Section*/
     #Home {
         padding: 140 0 140 80;
+    }
+
+    body {
+        background-color: red;
     }
 
 }
