@@ -41,6 +41,8 @@
     margin: 0;
     scroll-behavior: smooth;
     user-select: none;
+    -webkit-tap-highlight-color: transparent;
+
 }
 
 body {
@@ -1198,6 +1200,7 @@ footer {
 
 @media(max-width:500px) {
 
+
     .styledSection {
         padding: 60 0 20 0;
     }
@@ -1213,6 +1216,7 @@ footer {
 
     .contentContainer {
         width: 100%;
+        padding:0 20;
     }
 
     .contentContainer h1 {
