@@ -849,6 +849,7 @@ footer {
 
 @media(max-width:1480px) {
 
+
     /*Nav*/
     .header {
         padding: 0 80;
@@ -861,7 +862,8 @@ footer {
 
     /*SectionsF*/
     .styledSection {
-        padding: 60 100 40 60;
+        padding: 30 100 30 60;
+        scroll-margin: 50px;
     }
 
     /*Features */
@@ -870,24 +872,24 @@ footer {
         height: 90%;
     }
 
-        /* Tax */
+    /* Tax */
 
-        .taxContainer {
-            display: grid;
-            grid-template-columns: repeat(2, auto);
-            align-items: center;
-            justify-content: space-between;
-    
-        }
-    
-        .tax {
-            max-width: 100% !important;
-        }
-    
-    
-        .taxPercentage>p::before {
-            width: 10%;
-        }
+    .taxContainer {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        align-items: center;
+        justify-content: space-between;
+
+    }
+
+    .tax {
+        max-width: 100% !important;
+    }
+
+
+    .taxPercentage>p::before {
+        width: 10%;
+    }
 }
 
 @media(max-width:1400px) {
@@ -902,10 +904,6 @@ footer {
     /*Hero Section*/
     #Home {
         padding: 140 0 140 80;
-    }
-
-    body {
-        background-color: red;
     }
 
 }
@@ -1226,6 +1224,16 @@ footer {
         flex-direction: row;
         justify-content: space-between;
     }
+
+
+
+    .gridFeatures>div:checked, .gridFeatures>div:checked .dropdownDescription {
+        transition: .5s;
+        visibility: visible;
+        opacity: 1;
+        height: 80%;
+    }
+
 
 }
 
