@@ -596,6 +596,10 @@ button:hover {
     background: linear-gradient(90deg, #3D6DFC, #42F5E1, #3D6DFC) !important;
 }
 
+#roadMapBlue {
+    align-items: center;
+}
+
 
 .Phase {
     width: 35%;
