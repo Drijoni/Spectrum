@@ -1239,6 +1239,11 @@ footer {
         height: 80%;
     }
 
+    .footerContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
     
 
 
