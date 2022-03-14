@@ -223,7 +223,7 @@ button:hover {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #4619A2;
+    background-color: black;
     overflow-x: hidden;
     transition: 0.5s;
     padding: 80px 0;
@@ -260,11 +260,9 @@ button:hover {
 }
 
 .mobileIcons {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2,auto);
     list-style: none;
-    justify-content: center;
-    align-items: center;
 }
 
 .mobileIcons i {
