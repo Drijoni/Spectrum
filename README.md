@@ -1,4 +1,4 @@
 # Spectrum
 Website related to a NFT project
 
-Live preview: nowspectrum.club
+Live preview: https://nowspectrum.club
