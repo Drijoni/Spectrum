@@ -439,7 +439,10 @@ button:hover {
 
 /* Hover Effect*/
 
-.gridFeatures>div:hover, .gridFeatures>div:hover .dropdownDescription {
+.gridFeatures>div:hover, 
+.gridFeatures>div:active,
+.gridFeatures>div:hover .dropdownDescription,
+.gridFeatures>div:active .dropdownDescription {
     transition: .5s;
     visibility: visible;
     opacity: 1;
