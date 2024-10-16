@@ -2,12 +2,12 @@
 
 @font-face {
     font-family: MenuShapiro;
-    src: url("../assets/fonts/Shapiro/Shapiro\ 45\ Welter\ Wide.otf") format("opentype");
+    src: url("../assets/fonts/Shapiro/nokiafc22.ttf") format("opentype");
 }
 
 @font-face {
     font-family: MainTitle;
-    src: url("../assets/fonts/Shapiro/Shapiro\ 75\ Heavy\ Extd.otf") format("opentype");
+    src: url("../assets/fonts/Shapiro/nokiafc22.ttf") format("opentype");
 
 }
 
@@ -129,7 +129,7 @@ body {
 
 .navbar ul li a:hover {
     transition: .3s;
-    color: rgba(70, 25, 162, 1);
+    color: rgba(135,210,31,255);
 }
 
 .navbar ul li a {
@@ -138,8 +138,10 @@ body {
 
 .logoContainer a img, .footerContainer img {
     padding: 25px;
-    width: 80px;
+    width: 130px;
 }
+
+
 
 .socialLinks ul {
     list-style: none;
@@ -185,7 +187,7 @@ body {
 
 .socialLinkAndButton button {
     padding: 10 40px;
-    background: linear-gradient(90deg, rgba(98, 248, 187, 1) 31%, rgba(105, 251, 233, 1) 79%);
+    background: linear-gradient(90deg, rgba(135, 210, 31, 255) 31%, rgb(13, 145, 41) 79%);
     font-weight: bold;
     font-family: MenuShapiro;
     font-size: 16px;
@@ -315,7 +317,7 @@ button:hover {
     color: transparent;
     font-family: MenuShapiro;
     align-items: center;
-    background: linear-gradient(90deg, rgba(100, 200, 224, 1) 5%, rgba(137, 100, 215, 1) 8%, rgba(70, 25, 162, 1) 46%);
+    background: linear-gradient(90deg, rgba(135, 210, 31, 255) 31%, rgb(13, 145, 41) 79%);
     -webkit-background-clip: text;
     display: flex;
     text-transform: uppercase;
@@ -324,8 +326,8 @@ button:hover {
 
 .contentContainer>h3::after {
     content: "";
-    background: linear-gradient(90deg, rgba(70, 25, 162, 1) 27%, rgba(137, 100, 215, 1) 58%);
-    width: 100px;
+    background: linear-gradient(90deg, rgba(135, 210, 31, 255) 31%, rgb(13, 145, 41) 79%);
+    width: 100px;s
     height: 5px;
     margin: 0 20;
     border-radius: 10px;
@@ -342,7 +344,7 @@ button:hover {
 .homeButtons button {
     border: none;
     padding: 15 40;
-    background: linear-gradient(90deg, rgba(98, 248, 187, 1) 31%, rgba(105, 251, 233, 1) 79%);
+    background: linear-gradient(90deg, rgba(135, 210, 31, 255) 31%, rgb(13, 145, 41) 79%);
     font-weight: bold;
     font-family: MenuShapiro;
     font-size: 16px;
@@ -1282,3 +1284,7 @@ footer {
     }
 
 }
+
+
+
+
