@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arcade Bot Professional Animation</title>
+    <style>
+        /* Font import */
+        @font-face {
+            font-family: 'NokiaFC22';
+            src: url('../Spectrum/assets/fonts/Shapiro/nokiafc22.ttf') format('truetype'); /* Adjust the path to the font file */
+        }
+
+        /* Reset and basic styling */
+        body, html {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #6ab04c; /* Solid green background */
+            font-family: 'NokiaFC22', sans-serif; /* Use NokiaFC22 font */
+            overflow: hidden;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+        }
+
+        /* Enhanced hand styling with parallax effect */
+        .hand-container {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+            transform: perspective(600px); /* Depth effect */
+        }
+
+        .left-hand, .right-hand {
+            width: 150px;
+            filter: drop-shadow(6px 6px 8px rgba(0, 0, 0, 0.4)); /* Enhanced shadow for realism */
+            transition: transform 0.5s ease-in-out; /* Smooth transition effect */
+        }
+
+        .left-hand {
+            animation: moveLeftHand 2s cubic-bezier(0.65, 0.05, 0.36, 1) forwards 2s; /* Start animation after 2s */
+            transform-origin: center right;
+        }
+
+        .right-hand {
+            animation: moveRightHand 2s cubic-bezier(0.65, 0.05, 0.36, 1) forwards 2s; /* Start animation after 2s */
+            transform-origin: center left;
+        }
+
+        @keyframes moveLeftHand {
+            0% { transform: translateX(0) rotate(0deg) scale(1); }
+            90% { transform: translateX(35px) rotate(-5deg) scale(1.1); }
+            100% { transform: translateX(30px) rotate(0deg) scale(1); }
+        }
+
+        @keyframes moveRightHand {
+            0% { transform: translateX(0) rotate(0deg) scale(1); }
+            90% { transform: translateX(-35px) rotate(5deg) scale(1.1); }
+            100% { transform: translateX(-30px) rotate(0deg) scale(1); }
+        }
+
+        /* Text animation styling with sliding effect */
+        .text-container {
+            font-size: 3rem;
+            color: #000; /* Black text for contrast against green background */
+            display: flex;
+            z-index: 1;
+            text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.3); /* Stronger shadow for more pop */
+        }
+
+        .letter {
+            opacity: 0;
+            transform: translateY(40px) skewX(10deg); /* Skew for dynamic entrance */
+            animation: letterAnimation 0.7s forwards; /* Keep letters visible at the end */
+        }
+
+        /* Enhanced text animation for each letter */
+        @keyframes letterAnimation {
+            0% { opacity: 0; transform: translateY(40px) skewX(10deg); }
+            70% { opacity: 1; transform: translateY(-10px) skewX(0deg); } /* Bounce up effect */
+            100% { opacity: 1; transform: translateY(0px); } /* Keep letters visible */
+        }
+
+        /* Arcade-style loading bar styling */
+        .loading-bar {
+            width: 200px;
+            height: 15px;
+            background: rgba(0, 0, 0, 0.1);
+            border: 2px solid #000; /* Black border for arcade style */
+            border-radius: 5px;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .loading-fill {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr); /* 10 squares */
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        .square {
+            width: 100%;
+            height: 100%;
+            background: black; /* Black fill */
+            opacity: 0; /* Start invisible */
+            animation: squareAnimation 0.5s forwards; /* Fill animation */
+        }
+
+        @keyframes squareAnimation {
+            0% { opacity: 0; }
+            100% { opacity: 1; } /* Keep filled after animation */
+        }
+
+        /* Fill each square one by one */
+        .square:nth-child(1) { animation-delay: 2s; }
+        .square:nth-child(2) { animation-delay: 2.05s; }
+        .square:nth-child(3) { animation-delay: 2.1s; }
+        .square:nth-child(4) { animation-delay: 2.15s; }
+        .square:nth-child(5) { animation-delay: 2.2s; }
+        .square:nth-child(6) { animation-delay: 2.25s; }
+        .square:nth-child(7) { animation-delay: 2.3s; }
+        .square:nth-child(8) { animation-delay: 2.35s; }
+        .square:nth-child(9) { animation-delay: 2.4s; }
+        .square:nth-child(10) { animation-delay: 2.45s; }
+
+        /* Hover effect on hands for interactivity */
+        .left-hand:hover, .right-hand:hover {
+            transform: scale(1.1); /* Slight scale up on hover */
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Using high-quality images for sharpness -->
+        <div class="hand-container">
+            <img src="../Spectrum/assets/images/2.png" alt="Left Hand" class="left-hand">
+            <img src="../Spectrum/assets/images/3.png" alt="Right Hand" class="right-hand">
+        </div>
+        <!-- Text with advanced animation effects -->
+        <div class="text-container">
+            <span class="letter" style="animation-delay: 0s;">A</span>
+            <span class="letter" style="animation-delay: 0.1s;">r</span>
+            <span class="letter" style="animation-delay: 0.2s;">c</span>
+            <span class="letter" style="animation-delay: 0.3s;">a</span>
+            <span class="letter" style="animation-delay: 0.4s;">d</span>
+            <span class="letter" style="animation-delay: 0.5s;">e</span>
+            <span class="letter" style="animation-delay: 0.6s;"> </span>
+            <span class="letter" style="animation-delay: 0.7s;">B</span>
+            <span class="letter" style="animation-delay: 0.8s;">o</span>
+            <span class="letter" style="animation-delay: 0.9s;">t</span>
+        </div>
+        <!-- Loading bar below the text -->
+        <div class="loading-bar">
+            <div class="loading-fill">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
