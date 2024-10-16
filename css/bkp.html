@@ -1,0 +1,545 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--Icon-->
+    <link rel="icon" href="assets/images/00.png" />
+
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="css/style.css" />
+
+    <!--Chart.js-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.6/Chart.bundle.js"></script>
+
+    <!--Font Awesome-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--AOS-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <title>Spectrum</title>
+  </head>
+
+  <body>
+    <header class="header" id="header">
+      <div class="logoAndNav">
+        <div class="logoContainer">
+          <a href="#">
+            <img src="assets/images/00.png" alt="" />
+          </a>
+        </div>
+        <nav class="navbar">
+          <ul>
+            <li><a href="#marketplace">Marketplace </a></li>
+            <li><a href="#features">Features </a></li>
+            <li><a href="#tokenomics">Tokenomics </a></li>
+            <li><a href="#roadmap">Roadmap </a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="socialLinkAndButton">
+        <div class="socialLinks">
+          <ul>
+            <li>
+              <a id="twitter" href="#" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a id="telegram" href="#" target="_blank"
+                ><i class="fa-brands fa-telegram"></i
+              ></a>
+            </li>
+            <li>
+              <a id="medium" href="#" target="_blank"
+                ><i class="fa-brands fa-medium"></i
+              ></a>
+            </li>
+            <li>
+              <a id="discord" href="#"
+                ><i class="fa-brands fa-discord" onclick="alertDiscord()"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <button>Dashboard</button>
+      </div>
+
+      <div id="toggleMenu">
+        <i id="open" class="fa-solid fa-bars"> </i>
+        <i id="close" class="fa-solid fa-xmark"></i>
+
+        <!--Sidenav-->
+        <div id="mySidenav" class="sidenav">
+          <div>
+            <a href="#marketplace">Marketplace </a>
+            <a href="#features">Features </a>
+            <a href="#tokenomics">Tokenomics </a>
+            <a href="#roadmap">Roadmap </a>
+          </div>
+          <button id="mobilebtn">Dashboard</button>
+          <div>
+            <ul class="mobileIcons">
+              <li>
+                <a id="twitter" href="#" target="_blank"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </li>
+              <li>
+                <a id="medium" href="#" target="_blank"
+                  ><i class="fa-brands fa-medium"></i
+                ></a>
+              </li>
+              <li>
+                <a id="telegram" href="#" target="_blank"
+                  ><i class="fa-brands fa-telegram"></i
+                ></a>
+              </li>
+              <li>
+                <a id="discord" href="#" onclick="alertDiscord()"
+                  ><i class="fa-brands fa-discord"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="mainContainer">
+      <!--Home-->
+      <section class="styledSection" id="Home">
+        <div class="allContent">
+          <div class="contentContainer">
+            <h3>Arcade Bot</h3>
+            <h1>TRADE CRYPTO LIKE NEVER BEFORE</h1>
+            <p>
+              Welcome to Arcade Bot, your ultimate trading bot on the Ethereum
+              mainnet. Whether you're sniping new token launches or securely
+              trading tokens that are already live, Arcade Bot is your go-to
+              solution. Stay ahead in the market with our seamless and efficient
+              trading platform, soon to be available on both Telegram and our
+              own web app. Join us and elevate your trading experience on
+              Ethereum like never before!
+            </p>
+
+            <div class="homeButtons">
+              <button>
+                <a href="assets/files/Pitchdeck.pdf" target="_blank">
+                  Start Trading
+                </a>
+              </button>
+              <button><a href="#" target="_blank">Community</a></button>
+            </div>
+          </div>
+          <img class="heroImage" src="./assets/images/imgTuxi.png" alt="" />
+        </div>
+      </section>
+      <!-- <img src="assets/images/opsplash.png" id="backgroundImage" /> -->
+
+      <!---- START----->
+
+      <div class="container2">
+        <div class="cube">
+            <div style="--x:-1; --y:0;">
+                <span style="--i:3;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:1;"></span>
+            </div>
+            <div style="--x:0; --y:0;">
+                <span style="--i:3;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:1;"></span>
+            </div>
+            <div style="--x:1; --y:0;">
+                <span style="--i:3;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:1;"></span>
+            </div>
+        </div>
+        <div class="cube">
+            <div style="--x:-1; --y:0;">
+                <span style="--i:3;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:1;"></span>
+            </div>
+            <div style="--x:0; --y:0;">
+                <span style="--i:3;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:1;"></span>
+            </div>
+            <div style="--x:1; --y:0;">
+                <span style="--i:3;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:1;"></span>
+            </div>
+        </div>
+        <div class="cube">
+            <div style="--x:-1; --y:0;">
+                <span style="--i:3;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:1;"></span>
+            </div>
+            <div style="--x:0; --y:0;">
+                <span style="--i:3;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:1;"></span>
+            </div>
+            <div style="--x:1; --y:0;">
+                <span style="--i:3;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:1;"></span>
+            </div>
+        </div>
+    </div>
+           <!---- END ---->
+
+
+      <!--Upcoming Marketplace-->
+      <section class="styledSection" id="marketplace" data-aos="fade-right">
+        <div class="platformContainer" data-aos="fade-right">
+          <h1 class="sectionTitle">
+            Your Smart Ally in the World of Cryptocurrency!
+          </h1>
+
+          <div class="platform" id="spectrumMarketplace">
+            <div class="platformImage">
+              <img src="./assets/marketplaceImages/Website1.png" alt="" />
+            </div>
+
+            <div class="platformContent">
+              <p>
+                Arcade Bot empowers you with cutting-edge features like Auto
+                Sniper for lightning-fast trades, Manual Buyer for precision
+                control, and seamless wallet management. Whether you're tracking
+                your snipes or distributing funds across multiple wallets,
+                Arcade Bot ensures your trading experience is efficient and
+                rewarding. Customize your strategy with adjustable slippage
+                settings and enjoy the convenience of managing your assets with
+                ease. Elevate your trading game with Arcade Bot—where innovation
+                meets opportunity. Join the future of trading today!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Features-->
+      <section class="styledSection" id="features" data-aos="fade-down">
+        <div class="featuresContainer">
+          <h1 class="sectionTitle">Features</h1>
+          <div class="gridFeatures">
+            <div class="portfolio">
+              <i class="fa-solid fa-crosshairs"></i>
+              <h2>FASTEST AUTO SNIPER</h2>
+              <div class="dropdownDescription">
+                <p>
+                  Fastest liquidity detector bot out there! Arcade Bot
+                  simplifies sniping. Just enter the contract address, adjust
+                  your settings, and let us handle the rest.
+                </p>
+              </div>
+            </div>
+            <div class="giveaways">
+              <i class="fa-solid fa-rocket"></i>
+              <h2>FAST & SECURE SWAPS</h2>
+              <div class="dropdownDescription">
+                <p>
+                  With lightning-fast execution, our secure swaps guarantee you
+                  a more favorable buy-in price.
+                </p>
+              </div>
+            </div>
+            <div class="deals">
+              <i class="fa-brands fa-hive"></i>
+              <h2>100% UPTIME & SCAM PROTECTION</h2>
+
+              <div class="dropdownDescription">
+                <p>
+                  Enjoy 100% uptime, lightning-fast execution, and secure swaps.
+                  Arace Bot keeps you ahead, whether sniping new tokens or
+                  trading established ones.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Artists Fund-->
+      <section class="styledSection" data-aos="fade-right">
+        <div class="platformContainer">
+          <h1 class="sectionTitle">Artist's Fund</h1>
+
+          <div class="platform">
+            <div class="platformImage">
+              <img src="./assets/marketplaceImages/Website3.png" alt="" />
+            </div>
+
+            <div class="platformContent">
+              <p>
+                At the end of every week, users can stake their tokens to vote
+                for an artwork. On sunday, the artists fund is split amongst the
+                artists based on the votes they got. By voting and staking,
+                users get rewards.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Join the Artists-->
+      <section class="styledSection" data-aos="fade-right">
+        <div class="platformContainer">
+          <h1 class="sectionTitle">Join the artist’s pool</h1>
+
+          <div class="platform">
+            <div class="platformImage">
+              <img src="./assets/marketplaceImages/Website2.png" alt="" />
+            </div>
+
+            <div class="platformContent">
+              <p>
+                Anyone can apply to become an artist but first they will need to
+                get 30 votes from the community, they also need to hold a min.
+                of tokens to be eligible.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Tokenomics-->
+      <section class="styledSection" id="tokenomics" data-aos="fade-in">
+        <h1 class="sectionTitle">Tokenomics</h1>
+        <div class="tokenomicsContainer">
+          <div id="monthsContainer" class="tokenStats">
+            <h1 class="tokenNumber">3 Months</h1>
+            <p class="tokenTitle">
+              Locked for team + 3 months<br />
+              vesting period
+            </p>
+          </div>
+          <div id="chart" class="tokenStats">
+            <div>
+              <canvas id="tokenChart" height="300" width="300"> </canvas>
+            </div>
+            <div id="tokenInfonContainer">
+              <p id="token">1B</p>
+              <p id="supply">Total Supply</p>
+            </div>
+          </div>
+
+          <div id="artistFund" class="tokenStats">
+            <h1 class="tokenNumber">5%</h1>
+            <p class="tokenTitle">Artist's Fund</p>
+          </div>
+
+          <div id="earlyBackers" class="tokenStats">
+            <h1 class="tokenNumber">20%</h1>
+            <p class="tokenTitle">Early backers</p>
+          </div>
+
+          <div id="treasury" class="tokenStats">
+            <h1 class="tokenNumber">15%</h1>
+            <p class="tokenTitle">Treasury</p>
+          </div>
+
+          <div id="advisors" class="tokenStats">
+            <h1 class="tokenNumber">5%</h1>
+            <p class="tokenTitle">Advisors</p>
+          </div>
+
+          <div id="rewards" class="tokenStats">
+            <h1 class="tokenNumber">16%</h1>
+            <p class="tokenTitle">Rewards (staking)</p>
+          </div>
+
+          <div id="balancerLBP" class="tokenStats">
+            <h1 class="tokenNumber">4%</h1>
+            <p class="tokenTitle">Ecosystem</p>
+          </div>
+
+          <div id="initialLiquidity" class="tokenStats">
+            <h1 class="tokenNumber">20%</h1>
+            <p class="tokenTitle">Initial Liquidity</p>
+          </div>
+
+          <div id="team" class="tokenStats">
+            <h1 class="tokenNumber">10%</h1>
+            <p class="tokenTitle">Team</p>
+          </div>
+
+          <div id="airdrop" class="tokenStats">
+            <h1 class="tokenNumber">5%</h1>
+            <p class="tokenTitle">AirDrops, Partners</p>
+          </div>
+        </div>
+      </section>
+
+      <!--RoadMap-->
+      <section class="styledSection" id="roadmap" data-aos="fade-in">
+        <div class="roadMapContainer">
+          <h1 class="sectionTitle">Roadmap</h1>
+
+          <div class="firstRoadmap">
+            <p>
+              While Spectrum is in early stages, we're convinced in the
+              project's ability to grow organically overrun, building trust
+              through transparent governance. The project's structure and future
+              are built on our belief in the power of Blockchain. <br /><br />
+              Our long-term goal for Spectrum is to develop a solution that
+              expands the utility of NFTs beyond collectibles and art by adding
+              value to users. As we scale and escalate, we pledge to include the
+              community as a partner in the success of the project, with
+              opportunities to participate in governance at every stage.
+            </p>
+
+            <div class="Phase">
+              <h1>Phase 1</h1>
+              <ul>
+                <li>Conceptualization of the project</li>
+
+                <li>Team Expansion</li>
+
+                <li>Social Media launch</li>
+
+                <li>Brand identity design</li>
+
+                <li>Presale</li>
+                <li>V1 of website</li>
+
+                <li>Launch</li>
+                <li>Kickstart marketing campaign</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="firstRoadmap" id="roadMapRed">
+            <div class="Phase">
+              <h1>Phase 2</h1>
+              <ul>
+                <li>Audit</li>
+
+                <li>Development sprint 1</li>
+
+                <li>V1 Platform (Dashboard & NFT Portfolio)</li>
+
+                <li>Development sprint 2</li>
+
+                <li>Marketplace</li>
+
+                <li>Exchanges listing</li>
+
+                <li>Guerilla marketing campaign</li>
+              </ul>
+            </div>
+
+            <h2>P2</h2>
+          </div>
+
+          <div class="firstRoadmap" id="roadMapBlue">
+            <h2>P3</h2>
+
+            <div class="Phase" id="roadMapBluePhase">
+              <h1>Phase 3</h1>
+              <ul>
+                <li>UX/UI upgrade</li>
+
+                <li>Development sprint 3</li>
+
+                <li>V1 NFT Launchpad</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Tax Dist...-->
+      <section class="styledSection" id="taxDistribution">
+        <div class="sectionTitleContainer">
+          <h1 class="sectionTitle">Tax distribution</h1>
+          <p>There is a 10% tax on every transaction:</p>
+        </div>
+        <div class="taxContainer">
+          <div class="tax" data-aos="fade-in" data-aos-duration="1000">
+            <div class="taxPercentage">
+              <p class="percentageDef">3%</p>
+            </div>
+            <div class="taxDescription">
+              <p>
+                of every transaction (buy, sell or swap) will be added to the
+                artists fund. We will use those funds to buy and trade NFTs and
+                in the future reward artists.
+              </p>
+            </div>
+          </div>
+
+          <div class="tax" data-aos="fade-in" data-aos-duration="1000">
+            <div class="taxPercentage">
+              <p class="percentageBlue">2%</p>
+            </div>
+            <div class="taxDescription">
+              <p>
+                of every transaction is re-distributed evenly to all holders.
+                This means that the amount of tokens in your wallet increases
+                automatically over time.
+              </p>
+            </div>
+          </div>
+
+          <div class="tax" data-aos="fade-in" data-aos-duration="1000">
+            <div class="taxPercentage">
+              <p class="percentageOrange">2%</p>
+            </div>
+            <div class="taxDescription">
+              <p>
+                of every transaction is automatically added to the liquidity
+                pool. Liquidity will automatically grow over time as the token
+                is traded.
+              </p>
+            </div>
+          </div>
+
+          <div class="tax" data-aos="fade-in" data-aos-duration="1000">
+            <div class="taxPercentage">
+              <p class="percentageLightRed">3%</p>
+            </div>
+            <div class="taxDescription">
+              <p>
+                of each transaction goes to Marketing and Development. It is key
+                and being able to have growing marketing funds would help us in
+                the long run.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!--Footer-->
+    <footer>
+      <div class="footerContainer">
+        <img src="/assets/images/00.png" alt="" />
+        <p>ALL RIGHTS RESERVED &copy Spectrum - 2024</p>
+      </div>
+    </footer>
+
+    <script>
+      AOS.init();
+    </script>
+    <script src="js/chart.js"></script>
+    <script src="js/navbar.js"></script>
+  </body>
+</html>

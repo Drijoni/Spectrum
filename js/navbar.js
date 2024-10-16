@@ -5,8 +5,8 @@ const openT = document.getElementById("open");
 const closeT = document.getElementById("close");
 
 window.addEventListener('scroll', function () {
-    var header = document.getElementById('header');
-    header.classList.toggle("sticky", window.scrollY > 0);
+    // var header = document.getElementById('header');
+    // header.classList.toggle("sticky", window.scrollY > 0);
 
 })
 

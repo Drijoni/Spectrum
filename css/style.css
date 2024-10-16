@@ -83,7 +83,6 @@ body {
 /* Header */
 .header {
     display: block;
-    transform: .5s;
     padding: 0 20 0 120;
     z-index: 999;
     position: fixed;
@@ -94,6 +93,8 @@ body {
     transition: .5s;
     align-items: center;
     justify-content: space-between;
+    background-color: #0a0214;
+    z-index: 999 !important;
 }
 
 #close {
@@ -214,7 +215,7 @@ button:hover {
 .header.sticky {
     background-color: rgb(0, 0, 0);
     position: fixed;
-    transition: .5s;
+    transition: 5s;
 }
 
 /*Mobile Nav*/
@@ -276,7 +277,7 @@ button:hover {
 /* First Section */
 
 #Home {
-    padding: 140 0 140 140;
+    padding: 80 0 140 140;
     z-index: 99;
     background-color: #0a0214;
     box-shadow: 0 44px 60px #0a0214;
@@ -874,6 +875,7 @@ footer {
     .styledSection {
         padding: 30 100 30 60;
         scroll-margin: 50px;
+        transition:.4s;
     }
 
     /*Features */
@@ -1285,6 +1287,149 @@ footer {
 
 }
 
+a, button {
+    pointer-events: auto; /* Ensure pointer events are enabled */
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover {
+    /* Add any additional hover styles you want here */
+    box-shadow: rgba(98, 248, 187, 1) 0px 0px 15px;
+}
 
 
 
+body {
+    overflow-x: hidden;
+}
+
+body > *:not(.container2) {
+    position: relative;
+    z-index: 2;
+    pointer-events: auto; /* Enable pointer events for all elements */
+}
+
+a:hover, button:hover {
+    cursor: pointer;
+    transition: .3s;
+    /* Add any additional hover styles you want here */
+}
+
+body > *:not(.container2):hover {
+    pointer-events: none; /* Re-enable pointer events on hover */
+}
+
+.featuresContainer {
+    pointer-events: auto; /* Enable pointer events */
+}
+
+.gridFeatures > div:hover,
+.gridFeatures > div:active,
+.gridFeatures > div:hover .dropdownDescription,
+.gridFeatures > div:active .dropdownDescription {
+    transition: .5s;
+    visibility: visible;
+    opacity: 1;
+    height: 95%;
+    pointer-events: auto; /* Ensure pointer events are enabled on hover */
+}
+
+@keyframes animate {
+	0% {
+		filter: hue-rotate(0deg);
+	}
+	100% {
+		filter: hue-rotate(360deg);
+	}
+}
+
+@keyframes moveUpDown {
+    0%, 100% {
+        transform: translateY(0) skewY(-20deg);
+    }
+    50% {
+        transform: translateY(20px) skewY(-20deg);
+    }
+}
+
+
+.container2 {
+    position: fixed;
+    transform: skewY(-20deg);
+    z-index: -1;
+    left: 77%;
+    top: 18vh; /* Use vh for vertical positioning */
+    opacity: 0.4;
+    pointer-events: auto;
+    animation: moveUpDown 3s ease-in-out infinite;
+
+    .cube {
+        position: relative;
+        z-index: 2;
+        &:nth-child(2) {
+            z-index: 1;
+            translate: -5vw -5vh; /* Halved vw and vh for translation */
+        }
+        &:nth-child(3) {
+            z-index: 3;
+            translate: 5vw 5vh; /* Halved vw and vh for translation */
+        }
+        div {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            gap: 4vh; /* Halved vh for gap */
+            translate: calc(-10vw * var(--x)) calc(-4vh * var(--y)); /* Halved vw and vh */
+            background: #dcdcdc;
+            span {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 2.4vw; /* Halved vw for font size */
+                font-family: MainTitle;
+                color: green;
+                width: 6vw; /* Halved vw for width */
+                height: 6vw; /* Halved vw for height */
+                background: #dcdcdc;
+                z-index: calc(1 * var(--i));
+                transition: 1.5s;
+                &:hover {
+                    color: white;
+                    transition: 0s;
+                    background: green; /* Set background to green on hover */
+                    filter: drop-shadow(0 0 1.5vw green); /* Halved vw for shadow */
+                    &:before, 
+                    &:after {
+                        transition: 0s;
+                        background: green; /* Set background to green on hover */
+                    }
+                }
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: -4.5vw; /* Halved vw for left */
+                    width: 4.5vw; /* Halved vw for width */
+                    height: 100%;
+                    background: #fff;
+                    transform-origin: right;
+                    transform: skewY(45deg);
+                    transition: 1.5s;
+                }
+                &:after {
+                    content: "";
+                    position: absolute;
+                    top: -4.5vw; /* Halved vw for top */
+                    left: 0;
+                    width: 100%;
+                    height: 4.5vw; /* Halved vw for height */
+                    background: #f2f2f2;
+                    transform-origin: bottom;
+                    transform: skewX(45deg);
+                    transition: 1.5s;
+                }
+            }
+        }
+    }
+}
